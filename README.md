@@ -8,7 +8,7 @@ A modern, high-performance, and fully responsive Admin Dashboard template. Built
 ---
 
 ## 📸 Preview
-![Dashboard Preview](imgs/preview.png)
+![Dashboard Preview](imgs/preview.webp)
 
 ---
 
