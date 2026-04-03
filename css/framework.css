@@ -1,0 +1,145 @@
+/* ====================  Start Main Colors ========================= */
+/* Backgrounds */
+.bc-primary { background-color: var(--primary-color); }
+.bc-primary-a { background-color: var(--primary-alt); }
+.bc-warning { background-color: var(--warning-color); }
+.bc-success { background-color: var(--success-color); }
+.bc-danger { background-color: var(--danger-color); }
+.bc-grey { background-color: var(--grey-color); }
+.bc-white { background-color: white; }
+.bc-eee { background-color: #eee; }
+/* Text Colors */
+.c-primary { color: var(--primary-color); }
+.c-primary-a { color: var(--primary-alt); }
+.c-warning { color: var(--warning-color); }
+.c-success { color: var(--success-color); }
+.c-danger { color: var(--danger-color); }
+.c-gray { color: var(--grey-color); }
+.c-white { color: white; }
+
+/* =========== Start Typography & Fonts ============= */
+/* Font Size */
+.fs-14 { font-size: 14px; }
+.fs-15 { font-size: 0.94rem; }
+.fs-16 { font-size: 1rem; }
+.fs-18 { font-size: 1.1rem; }
+.fs-19 { font-size: 1.2rem; }
+.fs-20 { font-size: 1.3rem; }
+.fs-30 { font-size: 1.9rem; }
+/* Font Weight & Family */
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.f-bold { font-weight: bold; }
+.f-family-i { font-family: inherit; }
+/* Text Alignment & Styles */
+.ts { text-align: start; }
+.tc { text-align: center; }
+.text-end { text-align: end; }
+.text-strike { text-decoration: line-through; }
+/* Line Height & Spacing */
+.lh-n { line-height: normal; }
+.lh-1 { line-height: 1.1; }
+.lh-2 { line-height: 1.2; }
+.let-space-1 { letter-spacing: -1px; }
+/* ============  Start Layout & Display (Flexbox) ============= */
+/* Display */
+.d-block { display: block; }
+.d-flex { display: flex; }
+.d-iflex { display: inline-flex; }
+/* Flex Direction & Wrap */
+.f-column { flex-direction: column; }
+.f-wrap { flex-wrap: wrap; }
+.f-wrap-r { flex-wrap: wrap-reverse; }
+.f-grow { flex-grow: 1; }
+/* Alignment */
+.align-start { align-items: flex-start; }
+.align-center { align-items: center; }
+.align-s-start { align-self: flex-start; }
+.align-s-end { align-self: flex-end; }
+/* Justify Content */
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-end { justify-content: flex-end; }
+/* Gaps */
+.gap-5 { gap: 5px; }
+.gap-10 { gap: 10px; }
+.gap-15 { gap: 15px; }
+/* ============== Start Dimensions (Width & Height) ================== */
+.w-100 { width: 100px; }
+.w-full { width: 100%; }
+.mw-full { max-width: 100%; }
+.h-full { height: 100%; }
+/* ============ Start Positioning & Visibility ================== */
+.p-relative { position: relative; }
+.p-absolute { position: absolute; }
+.ov-h { overflow: hidden; }
+/* Screen Reader Only */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+/* ========== Start Spacing (Padding & Margin) ============== */
+/* Padding General */
+.p-5 { padding: 5px; }
+.p-10 { padding: 10px; }
+.p-15 { padding: 15px; }
+.p-20 { padding: 20px; }
+.p-block-10 { padding-block: 10px; }
+.p-inline-10 { padding-inline: 10px; }
+/* Padding Top */
+.pt-5 { padding-top: 5px; }
+.pt-10 { padding-top: 10px; }
+.pt-15 { padding-top: 15px; }
+/* Padding Bottom */
+.pb-0 { padding-bottom: 0px; }
+.pb-5 { padding-bottom: 5px; }
+.pb-10 { padding-bottom: 10px; }
+.pb-20 { padding-bottom: 20px; }
+/* Margin General */
+.m-0 { margin: 0px; }
+.m-10 { margin: 10px; }
+.m-20 { margin: 20px; }
+.m-a { margin: auto; }
+/* Margin Top */
+.mt-0 { margin-top: 0px; }
+.mt-5 { margin-top: 5px; }
+.mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+/* Margin Right & Left */
+.mr-5 { margin-right: 5px; }
+.mb-5 { margin-bottom: 5px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.ml-a { margin-left: auto; }
+/* ========= Start Borders & Radius =========== */
+.rad-6 { border-radius: 6px; }
+.rad-10 { border-radius: 10px; }
+.rad-half { border-radius: 50%; }
+/* ===== Start Effects & Utilities======== */
+.shadow-d { box-shadow: 0 0 10px 0 #ddd; }
+.m-transition { transition: var(--main-transition); }
+.c-poin { cursor: pointer; }
+/* ===== Start Components (Buttons & Resets) ====== */
+.button {
+  padding: 5px 20px;
+  width: fit-content;
+}
+.button-s {
+  padding: 5px 10px;
+  width: fit-content;
+}
+.but-reset {
+  appearance: none;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+}

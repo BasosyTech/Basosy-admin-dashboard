@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="icon" href="imgs/logo-2.webp" type="image/webp" />
+    <meta
+      name="description"
+      content="Basosy Dashboard Courses: Your gateway to learning. Discover new web development tutorials, track student counts, and access detailed information for tech courses."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="css/all.min.css" /></noscript>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.min.css" />
+  </head>
+  <body>
+    <aside class="sidebar bc-white p-10 p-relative">
+      <div class="sidebar__logo d-flex align-center gap-5 mb-10">
+        <img src="imgs/logo-2.webp" alt="" class="sidebar__logo-image rad-10" />
+        <h2 class="sidebar__heading m-0">Basosy</h2>
+      </div>
+      <ul class="sidebar__links">
+        <li>
+          <a
+            href="index.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i
+              class="fa-solid fa-tachograph-digital fa-fw"
+              aria-hidden="true"
+            ></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="settings.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="profile.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="projects.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="courses.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500 active"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw" aria-hidden="true"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="friends.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-user-group fa-fw" aria-hidden="true"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="files.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="plans.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <header
+        class="header bc-white p-10 d-flex justify-between align-center gap-5"
+      >
+        <search class="p-relative header__search">
+          <form action="">
+            <i
+              class="fa-solid fa-magnifying-glass p-absolute header__search-icon"
+            ></i>
+            <label for="search" class="visually-hidden">Search Bar</label>
+            <input
+              type="search"
+              placeholder="Type A Keyword"
+              id="search"
+              class="p-10 rad-6 header__search-input fw-500 m-transition w-100 f-family-i"
+            />
+          </form>
+        </search>
+        <div class="header__profile d-flex align-center gap-10">
+          <i
+            class="fa-regular fa-bell fa-lg p-relative header__icon"
+            aria-hidden="true"
+          ></i>
+          <img
+            src="imgs/myimage.webp"
+            class="rad-half p-relative header__image"
+            alt="your image"
+          />
+        </div>
+      </header>
+      <div class="page-content p-20">
+        <h1 class="page-content__title m-0 p-relative">Courses</h1>
+        <div class="page-content__wrapper courses-page">
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-1.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-01.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                Mastering Web Design
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                Master The Art Of Web Designing And Mocking, Prototyping And
+                Creating Web Design Architecture
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">950</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$165</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-2.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-02.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                JavaScript Mastery
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                Learn JavaScript From Zero To Hero With Real-World Projects And
+                Modern ES6+ Concepts
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">1240</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$199</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-3.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-03.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                React & Redux
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                Build Scalable React Applications With Redux State Management
+                And Modern Hooks
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">870</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$219</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-4.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-04.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                Python For Beginners
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                Start Your Programming Journey With Python Through Hands-On
+                Exercises And Projects
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">2100</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$149</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-1.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-05.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                Database & SQL
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                Design And Query Databases Using SQL With Advanced Techniques
+                And Optimization
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">680</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$135</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-2.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-01.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                Responsive Web Design
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                Mastering Responsive Web Design And Media Queries And Know
+                Everything About Breakpoints
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">540</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$249</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-3.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-02.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                Cloud Computing AWS
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                Deploy And Manage Applications On AWS Cloud With Best Practices
+                And Architecture
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">760</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$289</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-4.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-03.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                Cybersecurity Basics
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                Understand Core Security Concepts, Ethical Hacking, And How To
+                Protect Systems
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">430</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$179</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-2.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-04.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                AI & Machine Learning
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                Dive Into Artificial Intelligence And Build Smart Models With
+                Python And TensorFlow
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">3500</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$329</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card course-card p-relative ov-h m-transition">
+            <img
+              src="imgs/courses-3.webp"
+              alt=""
+              class="course-card__img mw-full w-full"
+            />
+            <img
+              src="imgs/friend-05.webp"
+              alt=""
+              class="course-card__owner p-absolute rad-half"
+            />
+            <div class="course-card__box p-15">
+              <h2 class="card__title card__title--course m-0 mb-5">
+                PHP Examples
+              </h2>
+              <p class="card__title-desc m-0 c-gray fw-500 fs-15 mb-10">
+                PHP Tutorials And Examples And Practice On Web Application And
+                Connecting With Databases
+              </p>
+              <a
+                href="#"
+                class="course-card__info-button bc-primary c-white rad-6 d-block m-a"
+                >Course Info</a
+              >
+              <div
+                class="course-card__info d-flex justify-between align-center gap-5 f-wrap mt-5"
+              >
+                <div class="d-flex gap-5 fw-500">
+                  <i
+                    class="fa-regular fa-user fa-fw course-card__icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Student Number</span>
+                  <span class="course-card__stu-num">3500</span>
+                </div>
+                <span
+                  class="course-card__salary fw-600 c-primary-a d-block mt-5 text-end fs-18"
+                  >$329</span
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

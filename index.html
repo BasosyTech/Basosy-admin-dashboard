@@ -1,0 +1,1147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dashboard</title>
+    <link rel="icon" href="imgs/logo-2.webp" type="image/webp" />
+    <meta
+      name="description"
+      content="Welcome to Abdo Basosy's Developer Dashboard. A comprehensive admin panel to manage projects, track daily tasks, statistics, and yearly targets efficiently."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+    <link rel="preload" as="image" href="imgs/welcom-team.webp" />
+    <link
+      rel="stylesheet"
+      href="css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="css/all.min.css" /></noscript>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.min.css" />
+  </head>
+  <body class="d-grid">
+    <aside class="sidebar bc-white p-10 p-relative">
+      <div class="sidebar__logo d-flex align-center gap-5 mb-10">
+        <img src="imgs/logo-2.webp" alt="" class="sidebar__logo-image rad-10" />
+        <h2 class="sidebar__heading m-0">Basosy</h2>
+      </div>
+      <ul class="sidebar__links">
+        <li>
+          <a
+            href="index.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500 active"
+          >
+            <i
+              class="fa-solid fa-tachograph-digital fa-fw"
+              aria-hidden="true"
+            ></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="settings.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="profile.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="projects.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="courses.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw" aria-hidden="true"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="friends.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-user-group fa-fw" aria-hidden="true"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="files.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="plans.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <header
+        class="header bc-white p-10 d-flex justify-between align-center gap-5"
+      >
+        <search class="p-relative header__search">
+          <form action="">
+            <i
+              class="fa-solid fa-magnifying-glass p-absolute header__search-icon fs-14"
+            ></i>
+            <label for="search" class="visually-hidden">Search Bar</label>
+            <input
+              type="search"
+              placeholder="Type A Keyword"
+              id="search"
+              class="p-10 rad-6 header__search-input fw-500 m-transition w-100 f-family-i"
+            />
+          </form>
+        </search>
+        <div class="header__profile d-flex align-center gap-10">
+          <i
+            class="fa-regular fa-bell fa-lg p-relative header__icon"
+            aria-hidden="true"
+          ></i>
+          <img
+            src="imgs/myimage.webp"
+            class="rad-half p-relative header__image"
+            alt="your image"
+          />
+        </div>
+      </header>
+      <div class="page-content p-20">
+        <h1 class="page-content__title p-relative m-0">Dashboard</h1>
+        <div class="page-content__wrapper">
+          <section class="card welcome">
+            <div
+              class="welcome__title p-10 d-flex justify-between align-center f-wrap-r"
+            >
+              <h2 class="welcome__heading lh-1 tc f-grow">
+                Welcome <span class="welcome__user-name">Basosy</span>
+              </h2>
+              <div class="welcome__image f-grow">
+                <img src="imgs/welcom-team.webp" alt="" />
+              </div>
+            </div>
+            <div
+              class="welcome__info d-flex justify-between p-10 gap-15 lh-1 align-center f-wrap"
+            >
+              <div class="welcome__user d-flex align-center gap-5 f-grow">
+                <img
+                  class="welcome__user-image rad-half"
+                  src="imgs/myimage.webp"
+                  alt=""
+                />
+                <div class="welcome__user-info">
+                  <h3 class="welcome__name m-0 fs-16">Abdo Basosy</h3>
+                  <span class="welcome__job f-bold fs-15 c-gray"
+                    >Developer</span
+                  >
+                </div>
+              </div>
+              <div class="welcome__projects f-grow">
+                <span class="welcome__projects-number f-bold">80</span>
+                <p class="welcome__projects-label m-0 f-bold fs-15 c-gray">
+                  Projects
+                </p>
+              </div>
+              <div class="welcome__money f-grow">
+                <span class="f-bold welcome__money-number">$8500</span>
+                <p class="m-0 f-bold welcome__money-label c-gray fs-15">
+                  Earned
+                </p>
+              </div>
+              <a
+                class="button welcome__button bc-primary c-white d-flex align-center rad-6 ml-a"
+                href="profile.html"
+                aria-label="Go To Profile Page"
+                >Profile</a
+              >
+            </div>
+          </section>
+          <section class="card draft p-10 d-flex f-column">
+            <div class="mb-10">
+              <h2 class="card__title m-0 fs-20 mb-5">Quick Draft</h2>
+              <p class="card__title-desc m-0 fs-18 fw-500">
+                Write A Draft For Your Ideas
+              </p>
+            </div>
+            <form action="" class="d-flex f-column f-grow draft__form">
+              <div class="mb-10 draft__title">
+                <label for="title-of-draft" class="visually-hidden"
+                  >Write Your Title</label
+                >
+                <input
+                  type="text"
+                  id="title-of-draft"
+                  placeholder="Title"
+                  class="draft__title-input w-full p-5 rad-6 fs-18"
+                />
+              </div>
+              <div class="draft__area mb-5 f-grow">
+                <label for="text" class="visually-hidden"
+                  >Write Your Thought</label
+                >
+                <textarea
+                  id="text"
+                  placeholder="Your Thought"
+                  class="draft__textarea w-full rad-6 p-5 f-family-i h-full fs-18"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="rad-6 bc-primary c-white button draft__submit ml-a f-family-i d-block fs-16 c-poin"
+              >
+                Save
+              </button>
+            </form>
+          </section>
+          <section class="card yearly_targets p-10">
+            <h2 class="card__title m-0 fs-20">Yearly Targets</h2>
+            <div class="yearly_targets__target mt-10">
+              <div class="d-flex justify-between align-center">
+                <div class="stats">
+                  <h3 class="stats__title m-0 c-gray fs-15" id="money-label">
+                    Money
+                  </h3>
+                  <p class="stats__number m-0 f-bold">$20.000</p>
+                </div>
+                <div
+                  class="yearly_targets__Percentage first d-iflex align-center gap-5"
+                >
+                  <span class="c-primary f-bold fs-15" aria-hidden="true"
+                    >80%</span
+                  >
+                  <i
+                    class="yearly_targets__Percentage-icon fa-solid fa-dollar-sign c-primary rad-6 d-iflex align-center justify-center fs-14"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+              <progress
+                value="80"
+                max="100"
+                class="yearly_targets__progg yearly_targets__progg--primary bc-eee rad-6 mt-5 d-block w-full"
+                aria-labelledby="money-label"
+              ></progress>
+            </div>
+            <div class="yearly_targets__target mt-10">
+              <div class="d-flex justify-between align-center">
+                <div class="stats">
+                  <h3 class="stats__title m-0 c-gray fs-15" id="projects-label">
+                    Projects
+                  </h3>
+                  <p class="stats__number m-0 f-bold">24</p>
+                </div>
+                <div
+                  class="yearly_targets__Percentage second d-iflex align-center gap-5"
+                >
+                  <span class="c-warning f-bold fs-15" aria-hidden="true"
+                    >55%</span
+                  >
+                  <i
+                    class="yearly_targets__Percentage-icon fa-solid fa-code c-warning rad-6 d-iflex align-center justify-center fs-14"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+              <progress
+                value="55"
+                max="100"
+                class="yearly_targets__progg yearly_targets__progg--warning bc-eee rad-6 mt-5 d-block w-full"
+                aria-labelledby="projects-label"
+              ></progress>
+            </div>
+            <div class="yearly_targets__target mt-10">
+              <div class="d-flex justify-between align-center">
+                <div class="stats">
+                  <h3 class="stats__title m-0 c-gray fs-15" id="team-label">
+                    Team
+                  </h3>
+                  <p class="stats__number m-0 f-bold">12</p>
+                </div>
+                <div
+                  class="yearly_targets__Percentage third d-iflex align-center gap-5"
+                >
+                  <span class="c-success f-bold fs-15" aria-hidden="true"
+                    >75%</span
+                  >
+                  <i
+                    class="yearly_targets__Percentage-icon fa-regular fa-user c-success rad-6 d-iflex align-center justify-center fs-14"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+              <progress
+                value="75"
+                max="100"
+                class="yearly_targets__progg yearly_targets__progg--success bc-eee rad-6 mt-5 d-block w-full"
+                aria-labelledby="team-label"
+              ></progress>
+            </div>
+          </section>
+          <section class="card tickets-stats p-10">
+            <h2 class="card__title m-0 fs-20">Tickets Statistics</h2>
+            <div
+              class="tickets-stats__boxes d-flex justify-between f-wrap gap-15 mt-10"
+            >
+              <div class="tickets-stats__box rad-6 p-10 tc f-grow">
+                <i
+                  class="fa-solid fa-envelope tickets-stats__icon c-warning mb-5 fs-30"
+                  aria-hidden="true"
+                ></i>
+                <span class="tickets-stats__label d-block f-bold fs-19"
+                  >Total</span
+                >
+                <span class="tickets-stats__number d-block fw-600">2500</span>
+              </div>
+              <div class="tickets-stats__box rad-6 p-10 tc f-grow">
+                <i
+                  class="fa-solid fa-spinner tickets-stats__icon c-primary mb-5 fs-30"
+                  aria-hidden="true"
+                ></i>
+                <span class="tickets-stats__label d-block f-bold fs-19"
+                  >Pending</span
+                >
+                <span class="tickets-stats__number d-block fw-600">500</span>
+              </div>
+              <div class="tickets-stats__box rad-6 p-10 tc f-grow">
+                <i
+                  class="fa-solid fa-circle-check tickets-stats__icon c-success mb-5 fs-30"
+                  aria-hidden="true"
+                ></i>
+                <span class="tickets-stats__label d-block f-bold fs-19"
+                  >Closed</span
+                >
+                <span class="tickets-stats__number d-block fw-600">500</span>
+              </div>
+              <div class="tickets-stats__box rad-6 p-10 tc f-grow">
+                <i
+                  class="fa-solid fa-circle-xmark tickets-stats__icon c-danger mb-5 fs-30"
+                  aria-hidden="true"
+                ></i>
+                <span class="tickets-stats__label d-block f-bold fs-19"
+                  >Deleted</span
+                >
+                <span class="tickets-stats__number d-block fw-600">100</span>
+              </div>
+            </div>
+          </section>
+          <section class="card news p-10">
+            <h2 class="card__title m-0 mb-10 fs-20">Latest News</h2>
+            <div class="news__wrapper d-flex gap-10 align-center rad-6 p-5">
+              <img
+                src="imgs/news-01.webp"
+                alt=""
+                class="news__image w-100 rad-6"
+              />
+              <div class="news__content f-grow w-full">
+                <p class="news__title m-0 fw-600">Created SASS Section</p>
+                <p class="news__desc m-0 fw-500 c-gray">
+                  New SASS Examples & Tutorials
+                </p>
+                <span class="news__date fw-600 d-block text-end"
+                  >3 Days Ago</span
+                >
+              </div>
+            </div>
+            <div class="news__wrapper d-flex gap-10 align-center rad-6 p-5">
+              <img
+                src="imgs/news-02.webp"
+                alt=""
+                class="news__image w-100 rad-6"
+              />
+              <div class="news__content f-grow w-full">
+                <p class="news__title m-0 fw-600">Changed The Design</p>
+                <p class="news__desc m-0 fw-500 c-gray">
+                  A Brand New Website Design
+                </p>
+                <span class="news__date fw-600 c-gray d-block text-end"
+                  >5 Days Ago</span
+                >
+              </div>
+            </div>
+            <div class="news__wrapper d-flex gap-10 align-center rad-6 p-5">
+              <img
+                src="imgs/news-03.webp"
+                alt=""
+                class="news__image w-100 rad-6"
+              />
+              <div class="news__content f-grow w-full">
+                <p class="news__title m-0 fw-600">Team Increased</p>
+                <p class="news__desc m-0 fw-500 c-gray">
+                  3 Developers Joined The Team
+                </p>
+                <span class="news__date fw-600 c-gray d-block text-end"
+                  >7 Days Ago</span
+                >
+              </div>
+            </div>
+            <div class="news__wrapper d-flex gap-10 align-center rad-6 p-5">
+              <img
+                src="imgs/news-04.webp"
+                alt=""
+                class="news__image w-100 rad-6"
+              />
+              <div class="news__content f-grow w-full">
+                <p class="news__title m-0 fw-600">Added Payment Gateway</p>
+                <p class="news__desc m-0 fw-500 c-gray">
+                  Many New Payment Gateways Added
+                </p>
+                <span class="news__date fw-600 c-gray d-block text-end"
+                  >9 Days Ago</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card tasks p-10">
+            <h2 class="card__title tasks__heading m-0 fs-20">Latest Tasks</h2>
+            <ul>
+              <li
+                class="tasks__row d-flex justify-between align-center p-10 gap-10 rad-6"
+              >
+                <div class="tasks__info">
+                  <h3 class="tasks__title m-0 fs-18">Record One New Video</h3>
+                  <p class="tasks__desc m-0 fw-600 c-gray">
+                    Record Python Create Exe Project
+                  </p>
+                </div>
+                <button
+                  class="but-reset tasks__icon m-transition c-poin fs-16"
+                  aria-label="Delete task: Record One New Video"
+                >
+                  <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li
+                class="tasks__row d-flex justify-between align-center p-10 gap-10 rad-6"
+              >
+                <div class="tasks__info">
+                  <h3 class="tasks__title m-0 fs-18">Write Article</h3>
+                  <p class="tasks__desc m-0 fw-600 c-gray">
+                    Write Low Level vs High Level Languages
+                  </p>
+                </div>
+                <button
+                  class="but-reset tasks__icon m-transition c-poin fs-16"
+                  aria-label="Delete task: Write Article"
+                >
+                  <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li
+                class="tasks__row d-flex justify-between align-center p-10 gap-10 rad-6"
+              >
+                <div class="tasks__info">
+                  <h3 class="tasks__title m-0 fs-18">Finish Project</h3>
+                  <p class="tasks__desc m-0 fw-600 c-gray">
+                    Publish Academy Programming Project
+                  </p>
+                </div>
+                <button
+                  class="but-reset tasks__icon m-transition c-poin fs-16"
+                  aria-label="Delete task: Finish Project"
+                >
+                  <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li
+                class="tasks__row d-flex justify-between align-center p-10 gap-10 c-gray rad-6"
+              >
+                <div class="tasks__info text-strike">
+                  <h3 class="tasks__title m-0 fs-18">Attend The Meeting</h3>
+                  <p class="tasks__desc m-0 fw-600 c-gray">
+                    Attend The Project Business Analysis Meeting
+                  </p>
+                </div>
+                <button
+                  class="but-reset tasks__icon m-transition c-poin fs-16"
+                  aria-label="Delete task: Attend The Meeting"
+                >
+                  <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li
+                class="tasks__row d-flex justify-between align-center p-10 gap-10 rad-6"
+              >
+                <div class="tasks__info">
+                  <h3 class="tasks__title m-0 fs-18">Finish Lesson</h3>
+                  <p class="tasks__desc m-0 fw-600 c-gray">
+                    Finish Teaching Flex Box
+                  </p>
+                </div>
+                <button
+                  class="but-reset tasks__icon m-transition c-poin fs-16"
+                  aria-label="Delete task: Finish Lesson"
+                >
+                  <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
+          </section>
+          <section class="card top-search p-10">
+            <h2 class="card__title m-0 fs-20">Top Search Items</h2>
+            <ul class="top-search__items mt-15">
+              <li
+                class="top-search__item d-flex justify-between gap-10 fw-500 m-transition rad-6"
+              >
+                <div class="top-search__keyword d-flex align-center gap-5">
+                  <i
+                    class="fa-regular fa-file-code fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  Programming
+                </div>
+                <span class="top-search__counter rad-6 fs-14 tc">220</span>
+              </li>
+              <li
+                class="top-search__item d-flex justify-between gap-10 fw-500 m-transition rad-6"
+              >
+                <div class="top-search__keyword d-flex align-center gap-5">
+                  <i class="fa-brands fa-js fs-20" aria-hidden="true"></i>
+                  JavaScript
+                </div>
+                <span class="top-search__counter rad-6 fs-14 tc">180</span>
+              </li>
+              <li
+                class="top-search__item d-flex justify-between gap-10 fw-500 m-transition rad-6"
+              >
+                <div class="top-search__keyword d-flex align-center gap-5">
+                  <i class="fa-brands fa-php fs-20" aria-hidden="true"></i>
+                  PHP
+                </div>
+                <span class="top-search__counter rad-6 fs-14 tc">160</span>
+              </li>
+              <li
+                class="top-search__item d-flex justify-between gap-10 fw-500 m-transition rad-6"
+              >
+                <div class="top-search__keyword d-flex align-center gap-5">
+                  <i class="fa-solid fa-code fs-20" aria-hidden="true"></i>
+                  Code
+                </div>
+                <span class="top-search__counter rad-6 fs-14 tc">145</span>
+              </li>
+              <li
+                class="top-search__item d-flex justify-between gap-10 fw-500 m-transition rad-6"
+              >
+                <div class="top-search__keyword d-flex align-center gap-5">
+                  <i class="fa-solid fa-palette fs-20" aria-hidden="true"></i>
+                  Design
+                </div>
+                <span class="top-search__counter rad-6 fs-14 tc">110</span>
+              </li>
+              <li
+                class="top-search__item d-flex justify-between gap-10 fw-500 m-transition rad-6"
+              >
+                <div class="top-search__keyword d-flex align-center gap-5">
+                  <i
+                    class="fa-regular fa-lightbulb fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  Logic
+                </div>
+                <span class="top-search__counter rad-6 fs-14 tc">95</span>
+              </li>
+            </ul>
+          </section>
+          <section class="card post p-10">
+            <h2 class="card__title m-0 fs-20">Latest Post</h2>
+            <div class="post__box p-5 rad-6">
+              <div class="post__author mt-15 d-flex gap-10 f-wrap">
+                <img
+                  src="imgs/myimage.webp"
+                  alt=""
+                  class="post__author-avatar rad-half"
+                />
+                <div class="post__author-info lh-1">
+                  <p class="post__author-name m-0 fw-600">Abdo Basosy</p>
+                  <span class="post__author-job fw-600 c-gray">Developer</span>
+                </div>
+              </div>
+              <q class="post__text fw-500 d-block mt-5 p-relative">
+                You can fool all of the people some of the time, and some of the
+                people all of the time, but you can't fool all of the people all
+                of the time.
+              </q>
+              <div class="post__stats d-flex gap-10 mt-10 justify-end">
+                <div class="post__like d-flex gap-5 align-center fw-500 fs-18">
+                  <button
+                    class="but-reset fs-18 post__like-icon c-poin"
+                    aria-label="Like This post"
+                  >
+                    <i class="fa-regular fa-thumbs-up" aria-hidden="true"></i>
+                  </button>
+                  <span class="post__like-number">1.8k</span>
+                  <span class="visually-hidden">like</span>
+                </div>
+                <div
+                  class="post__comment d-flex gap-5 align-center fw-500 fs-18"
+                >
+                  <i
+                    class="fa-regular fa-message post__comment-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">comment</span>
+                  <span class="post__comment-number">500</span>
+                </div>
+              </div>
+            </div>
+            <div class="post__box p-5 rad-6">
+              <div class="post__author d-flex gap-10 f-wrap">
+                <img
+                  src="imgs/myimage.webp"
+                  alt=""
+                  class="post__author-avatar rad-half"
+                />
+                <div class="post__author-info lh-1">
+                  <p class="post__author-name m-0 fw-600">Abdo Basosy</p>
+                  <span class="post__author-job fw-600 c-gray">Developer</span>
+                </div>
+              </div>
+              <q class="post__text fw-500 d-block mt-5 p-relative">
+                Always code as if the guy who ends up maintaining your code will
+                be a violent psychopath who knows where you live.
+              </q>
+              <div class="post__stats d-flex gap-10 mt-10 justify-end">
+                <div class="post__like d-flex gap-5 align-center fw-500 fs-18">
+                  <button
+                    class="but-reset fs-18 post__like-icon c-poin"
+                    aria-label="Like This post"
+                  >
+                    <i class="fa-regular fa-thumbs-up" aria-hidden="true"></i>
+                  </button>
+                  <span class="post__like-number">1.8k</span>
+                  <span class="visually-hidden">like</span>
+                </div>
+                <div
+                  class="post__comment d-flex gap-5 align-center fw-500 fs-18"
+                >
+                  <i
+                    class="fa-regular fa-message post__comment-icon"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">comment</span>
+                  <span class="post__comment-number">500</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="card p-10 social-media">
+            <h2 class="card__title m-0 mb-10 fs-20">Social Media Stats</h2>
+            <div
+              class="social-media__box social-media__box--twitter d-flex justify-center gap-5 align-center rad-6 p-5 mb-10 m-transition p-relative"
+            >
+              <i
+                class="fa-brands fa-square-x-twitter social-media__icon"
+                aria-hidden="true"
+              ></i>
+              <div class="social-media__stats f-grow lh-1">
+                <div class="social-media__title fw-600">Twitter</div>
+                <div class="social-media__desc fw-500 fs-14">90K Followers</div>
+              </div>
+              <a
+                href="https://x.com/home"
+                target="_blank"
+                aria-label="Go To Twitter"
+                class="social-media__button c-primary rad-6 m-transition tc"
+                >Follow</a
+              >
+            </div>
+            <div
+              class="social-media__box social-media__box--facebook d-flex justify-between gap-5 align-center rad-6 p-5 mb-10 m-transition p-relative"
+            >
+              <i
+                class="fa-brands fa-facebook social-media__icon social-media__icon--facebook"
+                aria-hidden="true"
+              ></i>
+              <div class="social-media__stats f-grow lh-1">
+                <div class="social-media__title fw-600">Facebook</div>
+                <div class="social-media__desc fw-500 fs-14">2M Like</div>
+              </div>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                aria-label="Go To Facebook"
+                class="social-media__button c-primary rad-6 m-transition tc"
+                >Like</a
+              >
+            </div>
+            <div
+              class="social-media__box social-media__box--youtube d-flex justify-between gap-5 align-center rad-6 p-5 mb-10 m-transition p-relative"
+            >
+              <i
+                class="fa-brands fa-youtube social-media__icon social-media__icon--youtube"
+                aria-hidden="true"
+              ></i>
+              <div class="social-media__stats f-grow lh-1">
+                <div class="social-media__title fw-600">Youtube</div>
+                <div class="social-media__desc fw-500 fs-14">1M subscribe</div>
+              </div>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                aria-label="Go To Youtube"
+                class="social-media__button c-primary rad-6 m-transition tc"
+                >Subscribe</a
+              >
+            </div>
+            <div
+              class="social-media__box social-media__box--linkedin d-flex justify-between gap-5 align-center rad-6 p-5 mb-10 m-transition p-relative"
+            >
+              <i
+                class="fa-brands fa-square-linkedin social-media__icon social-media__icon--linkedin"
+                aria-hidden="true"
+              ></i>
+              <div class="social-media__stats f-grow lh-1">
+                <div class="social-media__title fw-600">Linkedin</div>
+                <div class="social-media__desc fw-500 fs-14">7k Followers</div>
+              </div>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                aria-label="Go To Linkedin"
+                class="social-media__button c-primary rad-6 m-transition tc"
+                >Follow</a
+              >
+            </div>
+          </section>
+          <section class="card p-10 uploads">
+            <h2 class="card__title m-0 fs-20">Latest Uploads</h2>
+            <ul class="uploads__list mt-15">
+              <li class="uploads__file rad-6 d-flex gap-5 align-center">
+                <img
+                  src="imgs/pdf-icon.webp"
+                  alt="pdf-icon"
+                  class="uploads__file-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                />
+                <div class="uploads__file-desc d-flex justify-between f-grow">
+                  <div class="uploads__file-name fw-600 fs-18">my-file.pdf</div>
+                  <span class="uploads__file-size fw-500 tc fs-14 rad-6"
+                    >2.9mb</span
+                  >
+                </div>
+              </li>
+              <li class="uploads__file rad-6 d-flex gap-5 align-center">
+                <img
+                  src="imgs/avi-icon.webp"
+                  alt="avi-icon"
+                  class="uploads__file-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                />
+                <div class="uploads__file-desc d-flex justify-between f-grow">
+                  <div class="uploads__file-name fw-600 fs-18">
+                    my-video-file.avi
+                  </div>
+                  <span class="uploads__file-size fw-500 tc fs-14 rad-6"
+                    >4.9mb</span
+                  >
+                </div>
+              </li>
+              <li class="uploads__file rad-6 d-flex gap-5 align-center">
+                <img
+                  src="imgs/psd-icon.webp"
+                  alt="psd-icon"
+                  class="uploads__file-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                />
+                <div class="uploads__file-desc d-flex justify-between f-grow">
+                  <div class="uploads__file-name fw-600 fs-18">
+                    my-psd-file.psd
+                  </div>
+                  <span class="uploads__file-size fw-500 tc fs-14 rad-6"
+                    >4.5mb</span
+                  >
+                </div>
+              </li>
+              <li class="uploads__file rad-6 d-flex gap-5 align-center">
+                <img
+                  src="imgs/zip-icon.webp"
+                  alt="zip-icon"
+                  class="uploads__file-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                />
+                <div class="uploads__file-desc d-flex justify-between f-grow">
+                  <div class="uploads__file-name fw-600 fs-18">
+                    My-Zip-File.zip
+                  </div>
+                  <span class="uploads__file-size fw-500 tc fs-14 rad-6"
+                    >8.9mb</span
+                  >
+                </div>
+              </li>
+              <li class="uploads__file rad-6 d-flex gap-5 align-center">
+                <img
+                  src="imgs/dll-icon.webp"
+                  alt="dll-icon"
+                  class="uploads__file-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                />
+                <div class="uploads__file-desc d-flex justify-between f-grow">
+                  <div class="uploads__file-name fw-600 fs-18">
+                    My-DLL-File.dll
+                  </div>
+                  <span class="uploads__file-size fw-500 tc fs-14 rad-6"
+                    >15.7mb</span
+                  >
+                </div>
+              </li>
+              <li class="uploads__file rad-6 d-flex gap-5 align-center">
+                <img
+                  src="imgs/eps-icon.webp"
+                  class="uploads__file-icon"
+                  alt="eps-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                />
+                <div class="uploads__file-desc d-flex justify-between f-grow">
+                  <div class="uploads__file-name fw-600 fs-18">
+                    My-Eps-File.Eps
+                  </div>
+                  <span class="uploads__file-size fw-500 tc fs-14 rad-6"
+                    >12.9mb</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="card p-10 project-progress">
+            <h2 class="card__title m-0 fs-20">Last Project Progress</h2>
+            <ul class="project-progress__steps p-relative mt-10">
+              <li
+                class="project-progress__step done fw-500 d-flex gap-10 align-center"
+              >
+                Got The Project
+              </li>
+              <li
+                class="project-progress__step done fw-500 d-flex gap-10 align-center"
+              >
+                Started The Project
+              </li>
+              <li
+                class="project-progress__step done fw-500 d-flex gap-10 align-center"
+              >
+                The Project About To Finish
+              </li>
+              <li
+                class="project-progress__step pending fw-500 d-flex gap-10 align-center"
+              >
+                Test The Project
+              </li>
+              <li
+                class="project-progress__step fw-500 d-flex gap-10 align-center"
+              >
+                Finish The Project & Get Money
+              </li>
+            </ul>
+          </section>
+          <section class="card p-10 reminders">
+            <h2 class="card__title m-0 fs-20">Reminders</h2>
+            <ul class="reminders_list mt-15">
+              <li class="reminders__task rad-6 mb-10 p-relative">
+                <p class="reminders__task-title m-0 f-bold">
+                  Check My Tasks List
+                </p>
+                <p class="reminders__task-date m-0 c-gray fw-500">
+                  28/09/2026 - 12:00am
+                </p>
+              </li>
+              <li class="reminders__task rad-6 mb-10 p-relative">
+                <p class="reminders__task-title m-0 f-bold">
+                  Check My Projects
+                </p>
+                <p class="reminders__task-date m-0 c-gray fw-500">
+                  26/10/2026 - 12:00am
+                </p>
+              </li>
+              <li class="reminders__task rad-6 mb-10 p-relative">
+                <p class="reminders__task-title m-0 f-bold">
+                  Call All My Clients
+                </p>
+                <p class="reminders__task-date m-0 c-gray fw-500">
+                  05/11/2026 - 12:00am
+                </p>
+              </li>
+              <li class="reminders__task rad-6 p-relative">
+                <p class="reminders__task-title m-0 f-bold">
+                  Finish The Development Workshop
+                </p>
+                <p class="reminders__task-date m-0 c-gray fw-500">
+                  20/12/2026 - 12:00am
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section class="project-table mt-20 card">
+          <div class="project-table__responsive-table">
+            <table class="project-table__table w-full fw-500">
+              <caption class="project-table__caption f-bold fs-20 mb-10">
+                Projects Table
+              </caption>
+              <thead class="project__thead rad-6">
+                <tr>
+                  <th class="project__th p-10">Name</th>
+                  <th class="project__th p-10">Finish Date</th>
+                  <th class="project__th p-10">Client</th>
+                  <th class="project__th p-10">Price</th>
+                  <th class="project__th p-10">Team</th>
+                  <th class="project__th p-10">Status</th>
+                </tr>
+              </thead>
+              <tbody class="project-table__tbody">
+                <tr class="project-table__tbody-tr">
+                  <td class="project__td p-20 tc">Ministry Wikipedia</td>
+                  <td class="project__td p-20 tc">10 May 2026</td>
+                  <td class="project__td p-20 tc">Ministry</td>
+                  <td class="project__td p-20 tc">$5300</td>
+                  <td class="project-table__image-holder tc">
+                    <img
+                      src="imgs/team-01.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-02.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-03.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-04.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                  </td>
+                  <td class="project__td">
+                    <div
+                      class="project-table__stat button bc-warning rad-6 c-white"
+                    >
+                      Pending
+                    </div>
+                  </td>
+                </tr>
+                <tr class="project-table__tbody-tr">
+                  <td class="project__td p-20 tc">Elzero Shop</td>
+                  <td class="project__td p-20 tc">12 Oct 2026</td>
+                  <td class="project__td p-20 tc">Elzero Company</td>
+                  <td class="project__td p-20 tc">$1500</td>
+                  <td class="project-table__image-holder tc">
+                    <img
+                      src="imgs/team-01.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-02.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-03.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                  </td>
+                  <td class="project__td">
+                    <div
+                      class="project-table__stat button bc-primary rad-6 c-white"
+                    >
+                      In Progress
+                    </div>
+                  </td>
+                </tr>
+                <tr class="project-table__tbody-tr">
+                  <td class="project__td p-20 tc">Bouba App</td>
+                  <td class="project__td p-20 tc">05 Sep 2026</td>
+                  <td class="project__td p-20 tc">Bouba</td>
+                  <td class="project__td p-20 tc">$800</td>
+                  <td class="project-table__image-holder tc">
+                    <img
+                      src="imgs/team-01.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-02.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                  </td>
+                  <td class="project__td">
+                    <div
+                      class="project-table__stat button bc-success rad-6 c-white"
+                    >
+                      Completed
+                    </div>
+                  </td>
+                </tr>
+                <tr class="project-table__tbody-tr">
+                  <td class="project__td p-20 tc">Mahmoud Website</td>
+                  <td class="project__td p-20 tc">22 May 2026</td>
+                  <td class="project__td p-20 tc">Mahmoud</td>
+                  <td class="project__td p-20 tc">$600</td>
+                  <td class="project-table__image-holder tc">
+                    <img
+                      src="imgs/team-01.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-02.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                  </td>
+                  <td class="project__td">
+                    <div
+                      class="project-table__stat button bc-success rad-6 c-white"
+                    >
+                      Completed
+                    </div>
+                  </td>
+                </tr>
+                <tr class="project-table__tbody-tr">
+                  <td class="project__td p-20 tc">Sayed Website</td>
+                  <td class="project__td p-20 tc">24 May 2026</td>
+                  <td class="project__td p-20 tc">Sayed</td>
+                  <td class="project__td p-20 tc">$300</td>
+                  <td class="project-table__image-holder tc">
+                    <img
+                      src="imgs/team-01.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-02.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-03.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                  </td>
+                  <td class="project__td">
+                    <div
+                      class="project-table__stat button bc-danger rad-6 c-white"
+                    >
+                      Rejected
+                    </div>
+                  </td>
+                </tr>
+                <tr class="project-table__tbody-tr">
+                  <td class="project__td p-20 tc">Arena Application</td>
+                  <td class="project__td p-20 tc">01 Mar 2026</td>
+                  <td class="project__td p-20 tc">Arena Company</td>
+                  <td class="project__td p-20 tc">$2600</td>
+                  <td class="project-table__image-holder tc">
+                    <img
+                      src="imgs/team-01.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-02.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-03.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                    <img
+                      src="imgs/team-04.png"
+                      alt=""
+                      class="project-table__tbody-img"
+                      loading="lazy"
+                    />
+                  </td>
+                  <td class="project__td">
+                    <div
+                      class="project-table__stat button bc-primary rad-6 c-white"
+                    >
+                      In Progress
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="icon" href="imgs/logo-2.webp" type="image/webp" />
+    <meta
+      name="description"
+      content="Basosy Dashboard Projects page. A complete overview of your workspace to easily track project status, team assignments, required skills, and financial details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="css/all.min.css" /></noscript>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.min.css" />
+  </head>
+  <body>
+    <aside class="sidebar bc-white p-10 p-relative">
+      <div class="sidebar__logo d-flex align-center gap-5 mb-10">
+        <img src="imgs/logo-2.webp" alt="" class="sidebar__logo-image rad-10" />
+        <h2 class="sidebar__heading m-0">Basosy</h2>
+      </div>
+      <ul class="sidebar__links">
+        <li>
+          <a
+            href="index.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-tachograph-digital fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="settings.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="profile.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="projects.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500 active"
+          >
+            <i class="fa-regular fa-folder fa-fw"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="courses.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="friends.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-user-group fa-fw"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="files.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="plans.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <header
+        class="header bc-white p-10 d-flex justify-between align-center gap-5"
+      >
+        <search class="p-relative header__search">
+          <form action="">
+            <i
+              class="fa-solid fa-magnifying-glass p-absolute header__search-icon"
+            ></i>
+            <label for="search" class="visually-hidden">Search Bar</label>
+            <input
+              type="search"
+              placeholder="Type A Keyword"
+              id="search"
+              class="p-10 rad-6 header__search-input fw-500 m-transition w-100 f-family-i"
+            />
+          </form>
+        </search>
+        <div class="header__profile d-flex align-center gap-10">
+          <i
+            class="fa-regular fa-bell fa-lg p-relative header__icon"
+            aria-hidden="true"
+          ></i>
+          <img
+            src="imgs/myimage.webp"
+            class="rad-half p-relative header__image"
+            alt="your image"
+          />
+        </div>
+      </header>
+      <div class="page-content p-20">
+        <h1 class="page-content__title p-relative m-0">Projects</h1>
+        <div class="page-content__wrapper page-content__wrapper--project">
+          <section class="card project p-15 m-transition">
+            <div
+              class="project__title d-flex justify-between align-center mb-5"
+            >
+              <h2 class="card__title fs-18 m-0" id="project-basosy-dashboard">
+                Basosy Dashboard
+              </h2>
+            </div>
+            <p class="project__desc m-0 fw-500 c-gray mb-10">
+              Basosy Dashboard Project Design And Programming And Hosting
+            </p>
+            <div
+              class="projects__holder d-flex justify-between gap-5 align-center"
+            >
+              <div class="project__imgs">
+                <img
+                  src="imgs/team-01.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-02.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-03.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-04.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+              </div>
+              <span class="project__progg-number c-primary-a fw-600 fs-18"
+                >85%</span
+              >
+            </div>
+            <progress
+              class="project__progg d-block w-full mt-5 rad-6"
+              value="85"
+              max="100"
+              aria-labelledby="project-basosy-dashboard"
+            ></progress>
+            <div class="project__tags d-flex gap-10 f-wrap mt-10">
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Programming</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Design</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Hosting</span
+              >
+            </div>
+            <div
+              class="projects__info d-flex justify-between align-center f-wrap mt-10"
+            >
+              <span class="project__salary c-primary-a fw-600 fs-18"
+                >$2,500</span
+              >
+              <p class="project__date m-0 c-gray fw-500">15/10/2026</p>
+            </div>
+          </section>
+          <section class="card project p-15 m-transition">
+            <div
+              class="project__title d-flex justify-between align-center mb-5"
+            >
+              <h2 class="card__title fs-18 m-0" id="project-academy-portal">
+                Academy Portal
+              </h2>
+            </div>
+            <p class="project__desc m-0 fw-500 c-gray mb-10">
+              Academy Portal Project Design And Programming And Marketing
+            </p>
+            <div
+              class="projects__holder d-flex justify-between gap-5 align-center"
+            >
+              <div class="project__imgs">
+                <img
+                  src="imgs/team-01.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-02.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-03.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+              </div>
+              <span class="project__progg-number c-primary-a fw-600 fs-18"
+                >42%</span
+              >
+            </div>
+            <progress
+              class="project__progg d-block w-full mt-5 rad-6"
+              value="42"
+              max="100"
+              aria-labelledby="project-academy-portal"
+            ></progress>
+            <div class="project__tags d-flex gap-10 f-wrap mt-10">
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Programming</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Design</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Marketing</span
+              >
+            </div>
+            <div
+              class="projects__info d-flex justify-between align-center f-wrap mt-10"
+            >
+              <span class="project__salary c-primary-a fw-600 fs-18"
+                >$1,800</span
+              >
+              <p class="project__date m-0 c-gray fw-500">15/5/2026</p>
+            </div>
+          </section>
+          <section class="card project p-15 m-transition">
+            <div
+              class="project__title d-flex justify-between align-center mb-5"
+            >
+              <h2
+                class="card__title fs-18 m-0"
+                id="project-chatting-application"
+              >
+                Chatting Application
+              </h2>
+            </div>
+            <p class="project__desc m-0 fw-500 c-gray mb-10">
+              Chatting App Project Design And Programming And Hosting
+            </p>
+            <div
+              class="projects__holder d-flex justify-between gap-5 align-center"
+            >
+              <div class="project__imgs">
+                <img
+                  src="imgs/team-01.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-02.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-03.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+              </div>
+              <span class="project__progg-number c-primary-a fw-600 fs-18"
+                >60%</span
+              >
+            </div>
+            <progress
+              class="project__progg d-block w-full mt-5 rad-6"
+              value="60"
+              max="100"
+              aria-labelledby="project-chatting-application"
+            ></progress>
+            <div class="project__tags d-flex gap-10 f-wrap mt-10">
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Programming</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Design</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Hosting</span
+              >
+            </div>
+            <div
+              class="projects__info d-flex justify-between align-center f-wrap mt-10"
+            >
+              <span class="project__salary c-primary-a fw-600 fs-18">$750</span>
+              <p class="project__date m-0 c-gray fw-500">25/4/2026</p>
+            </div>
+          </section>
+          <section class="card project p-15 m-transition">
+            <div
+              class="project__title d-flex justify-between align-center mb-5"
+            >
+              <h2 class="card__title fs-18 m-0" id="project-ahmed-dashboard">
+                Ahmed Dashboard
+              </h2>
+            </div>
+            <p class="project__desc m-0 fw-500 c-gray mb-10">
+              Ahmed Dashboard Project Design And Programming And Hosting
+            </p>
+            <div
+              class="projects__holder d-flex justify-between gap-5 align-center"
+            >
+              <div class="project__imgs">
+                <img
+                  src="imgs/team-01.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-02.png"
+                  alt=""
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-03.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+              </div>
+              <span class="project__progg-number c-primary-a fw-600 fs-18"
+                >30%</span
+              >
+            </div>
+            <progress
+              class="project__progg d-block w-full mt-5 rad-6"
+              value="30"
+              max="100"
+              aria-labelledby="project-ahmed-dashboard"
+            ></progress>
+            <div class="project__tags d-flex gap-10 f-wrap mt-10">
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Programming</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Design</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Hosting</span
+              >
+            </div>
+            <div
+              class="projects__info d-flex justify-between align-center f-wrap mt-10"
+            >
+              <span class="project__salary c-primary-a fw-600 fs-18"
+                >$1,600</span
+              >
+              <p class="project__date m-0 c-gray fw-500">10/7/2026</p>
+            </div>
+          </section>
+          <section class="card project p-15 m-transition">
+            <div
+              class="project__title d-flex justify-between align-center mb-5"
+            >
+              <h2 class="card__title fs-18 m-0" id="project-ahmed-portal">
+                Ahmed Portal
+              </h2>
+            </div>
+            <p class="project__desc m-0 fw-500 c-gray mb-10">
+              Ahmed Portal Project Design And Programming And Hosting
+            </p>
+            <div
+              class="projects__holder d-flex justify-between gap-5 align-center"
+            >
+              <div class="project__imgs">
+                <img
+                  src="imgs/team-01.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-02.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+              </div>
+              <span class="project__progg-number c-primary-a fw-600 fs-18"
+                >90%</span
+              >
+            </div>
+            <progress
+              class="project__progg d-block w-full mt-5 rad-6"
+              value="90"
+              max="100"
+              aria-labelledby="project-ahmed-portal"
+            ></progress>
+            <div class="project__tags d-flex gap-10 f-wrap mt-10">
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Programming</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Design</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Hosting</span
+              >
+            </div>
+            <div
+              class="projects__info d-flex justify-between align-center f-wrap mt-10"
+            >
+              <span class="project__salary c-primary-a fw-600 fs-18">$850</span>
+              <p class="project__date m-0 c-gray fw-500">2/6/2026</p>
+            </div>
+          </section>
+          <section class="card project p-15 m-transition">
+            <div
+              class="project__title d-flex justify-between align-center mb-5"
+            >
+              <h2
+                class="card__title fs-18 m-0"
+                id="project-mohamed-application"
+              >
+                Mohamed Application
+              </h2>
+            </div>
+            <p class="project__desc m-0 fw-500 c-gray mb-10">
+              Mohamed App Project Design And Programming And Hosting
+            </p>
+            <div
+              class="projects__holder d-flex justify-between gap-5 align-center"
+            >
+              <div class="project__imgs">
+                <img
+                  src="imgs/team-01.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-02.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-03.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+              </div>
+              <span class="project__progg-number c-primary-a fw-600 fs-18"
+                >45%</span
+              >
+            </div>
+            <progress
+              class="project__progg d-block w-full mt-5 rad-6"
+              value="45"
+              max="100"
+              aria-labelledby="project-mohamed-application"
+            ></progress>
+            <div class="project__tags d-flex gap-10 f-wrap mt-10">
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Programming</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Design</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Hosting</span
+              >
+            </div>
+            <div
+              class="projects__info d-flex justify-between align-center f-wrap mt-10"
+            >
+              <span class="project__salary c-primary-a fw-600 fs-18"
+                >$1,200</span
+              >
+              <p class="project__date m-0 c-gray fw-500">24/9/2026</p>
+            </div>
+          </section>
+          <section class="card project p-15 m-transition">
+            <div
+              class="project__title d-flex justify-between align-center mb-5"
+            >
+              <h2 class="card__title fs-18 m-0" id="project-mohamed-dashboard">
+                Mohamed Dashboard
+              </h2>
+            </div>
+            <p class="project__desc m-0 fw-500 c-gray mb-10">
+              Mohamed Dashboard Project Design And Programming
+            </p>
+            <div
+              class="projects__holder d-flex justify-between gap-5 align-center"
+            >
+              <div class="project__imgs">
+                <img
+                  src="imgs/team-01.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-04.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+              </div>
+              <span class="project__progg-number c-primary-a fw-600 fs-18"
+                >75%</span
+              >
+            </div>
+            <progress
+              class="project__progg d-block w-full mt-5 rad-6"
+              value="75"
+              max="100"
+              aria-labelledby="project-mohamed-dashboard"
+            ></progress>
+            <div class="project__tags d-flex gap-10 f-wrap mt-10">
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Programming</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Design</span
+              >
+            </div>
+            <div
+              class="projects__info d-flex justify-between align-center f-wrap mt-10"
+            >
+              <span class="project__salary c-primary-a fw-600 fs-18"
+                >$5,500</span
+              >
+              <p class="project__date m-0 c-gray fw-500">4/11/2026</p>
+            </div>
+          </section>
+          <section class="card project p-15 m-transition">
+            <div
+              class="project__title d-flex justify-between align-center mb-5"
+            >
+              <h2 class="card__title fs-18 m-0" id="project-mohamed-portal">
+                Mohamed Portal
+              </h2>
+            </div>
+            <p class="project__desc m-0 fw-500 c-gray mb-10">
+              Ahmed Portal Project Design And Programming And Marketing
+            </p>
+            <div
+              class="projects__holder d-flex justify-between gap-5 align-center"
+            >
+              <div class="project__imgs">
+                <img
+                  src="imgs/team-01.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-02.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-03.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-04.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+              </div>
+              <span class="project__progg-number c-primary-a fw-600 fs-18"
+                >99%</span
+              >
+            </div>
+            <progress
+              class="project__progg d-block w-full mt-5 rad-6"
+              value="99"
+              max="100"
+              aria-labelledby="project-mohamed-portal"
+            ></progress>
+            <div class="project__tags d-flex gap-10 f-wrap mt-10">
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Programming</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Design</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Marketing</span
+              >
+            </div>
+            <div
+              class="projects__info d-flex justify-between align-center f-wrap mt-10"
+            >
+              <span class="project__salary c-primary-a fw-600 fs-18"
+                >$4,500</span
+              >
+              <p class="project__date m-0 c-gray fw-500">10/12/2026</p>
+            </div>
+          </section>
+          <section class="card project p-15 m-transition">
+            <div
+              class="project__title d-flex justify-between align-center mb-5"
+            >
+              <h2 class="card__title fs-18 m-0" id="project-ahmed-application">
+                Ahmed Application
+              </h2>
+            </div>
+            <p class="project__desc m-0 fw-500 c-gray mb-10">
+              Ahmed App Project Design And Marketing And Hosting
+            </p>
+            <div
+              class="projects__holder d-flex justify-between gap-5 align-center"
+            >
+              <div class="project__imgs">
+                <img
+                  src="imgs/team-01.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-04.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-02.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+                <img
+                  src="imgs/team-03.png"
+                  alt="John Doe"
+                  class="project__img rad-half"
+                />
+              </div>
+              <span class="project__progg-number c-primary-a fw-600 fs-18"
+                >15%</span
+              >
+            </div>
+            <progress
+              class="project__progg d-block w-full mt-5 rad-6"
+              value="15"
+              max="100"
+              aria-labelledby="project-ahmed-application"
+            ></progress>
+            <div class="project__tags d-flex gap-10 f-wrap mt-10">
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Hosting</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Design</span
+              >
+              <span class="project__tag c-primary-a rad-6 fs-14 fw-600"
+                >Marketing</span
+              >
+            </div>
+            <div
+              class="projects__info d-flex justify-between align-center f-wrap mt-10"
+            >
+              <span class="project__salary c-primary-a fw-600 fs-18"
+                >$3,500</span
+              >
+              <p class="project__date m-0 c-gray fw-500">29/5/2026</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

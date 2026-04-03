@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>settings</title>
+    <link rel="icon" href="imgs/logo-2.webp" type="image/webp"  />
+    <meta
+      name="description"
+      content="Account settings and configuration page. Easily update your profile, manage two-factor authentication, link social accounts, and control your site preferences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="css/all.min.css" /></noscript>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.min.css" />
+  </head>
+  <body>
+    <aside class="sidebar bc-white p-10 p-relative">
+      <div class="sidebar__logo d-flex align-center gap-5 mb-10">
+        <img src="imgs/logo-2.webp" alt="" class="sidebar__logo-image rad-10" />
+        <h2 class="sidebar__heading m-0">Basosy</h2>
+      </div>
+      <ul class="sidebar__links">
+        <li>
+          <a
+            href="index.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-tachograph-digital fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="settings.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500 active"
+          >
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="profile.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="projects.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-folder fa-fw"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="courses.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="friends.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-user-group fa-fw"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="files.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="plans.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <header
+        class="header bc-white p-10 d-flex justify-between align-center gap-5"
+      >
+        <search class="p-relative header__search">
+          <form action="">
+            <i
+              class="fa-solid fa-magnifying-glass p-absolute header__search-icon"
+            ></i>
+            <label for="search" class="visually-hidden">Search Bar</label>
+            <input
+              type="search"
+              placeholder="Type A Keyword"
+              id="search"
+              class="p-10 rad-6 header__search-input fw-500 m-transition w-100 f-family-i"
+            />
+          </form>
+        </search>
+        <div class="header__profile d-flex align-center gap-10">
+          <i
+            class="fa-regular fa-bell fa-lg p-relative header__icon"
+            aria-hidden="true"
+          ></i>
+          <img
+            src="imgs/myimage.webp"
+            class="rad-half p-relative header__image"
+            alt="your image"
+          />
+        </div>
+      </header>
+      <div class="page-content p-20">
+        <h1 class="page-content__title p-relative m-0">Settings</h1>
+        <div class="page-content__wrapper">
+          <section class="card site-control p-15">
+            <h2 class="card__title m-0 fs-20">Site Control</h2>
+            <p class="card__title-desc mt-5 mb-10 c-gray fs-15 fw-500">
+              Control The Website If There Is Maintenance
+            </p>
+            <div
+              class="site-control__wrapper d-flex justify-between gap-10 align-center mb-20"
+            >
+              <div class="site-control__wrapper-info">
+                <h3
+                  class="site-control__wrapper-title mb-5 fw-600 m-0 fs-18"
+                  id="site-control-title"
+                >
+                  Website Control
+                </h3>
+                <p
+                  class="site-control__wrapper-desc c-gray fw-500 m-0"
+                  id="site-control-desc"
+                >
+                  Open/Close Website And Type The Reason
+                </p>
+              </div>
+              <label class="d-block">
+                <input
+                  type="checkbox"
+                  checked
+                  class="toggle-checkbox p-absolute"
+                  role="switch"
+                  aria-labelledby="site-control-title"
+                  aria-describedby="site-control-desc"
+                />
+                <div
+                  class="toggle-switch c-poin m-transition p-relative"
+                  aria-hidden="true"
+                ></div>
+              </label>
+            </div>
+            <textarea
+              name="site-control__close-message"
+              id="close-message-input"
+              aria-label="Close Message Content"
+              placeholder="Close Message Content"
+              class="site-control__textarea f-family-i w-full p-10 rad-6"
+            ></textarea>
+          </section>
+          <section class="card general-info p-15">
+            <h2 class="card__title m-0 fs-20">General Info</h2>
+            <p class="card__title-desc fw-500 c-gray mt-5 mb-10">
+              General Information About Your Account
+            </p>
+            <form action="">
+              <div class="mb-10 general-info__wrapper rad-10">
+                <label
+                  for="general-info__First"
+                  class="general-info__label d-block c-gray"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="general-info__First"
+                  value="Abdo"
+                  autocomplete="name"
+                  class="general-info__input w-full fw-500 fs-18"
+                />
+              </div>
+              <div class="mb-10 general-info__wrapper rad-10">
+                <label
+                  for="general-info__Last"
+                  class="general-info__label d-block c-gray"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="general-info__Last"
+                  value="Basosy"
+                  autocomplete="name"
+                  class="general-info__input w-full rad-6 fw-500 fs-18"
+                />
+              </div>
+              <div class="mb-10 general-info__wrapper rad-10">
+                <label
+                  for="general-info__email"
+                  class="general-info__label d-block c-gray"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  id="general-info__email"
+                  value="o@nn.sa"
+                  disabled
+                  class="general-info__input w-full rad-6 fw-500 fs-18"
+                />
+              </div>
+              <button
+                type="submit"
+                class="general-info__changes c-poin w-full bc-primary c-white fs-18 rad-10 p-10"
+              >
+                Save Changes
+              </button>
+            </form>
+          </section>
+          <section class="card security p-15">
+            <h2 class="card__title m-0 fs-20">Security Info</h2>
+            <p class="card__title-desc m-0 fw-500 c-gray mt-5">
+              Security Information About Your Account
+            </p>
+            <div
+              class="security__box d-flex align-center gap-5 mt-10 justify-center"
+            >
+              <i
+                class="security__box-icon fa-solid fa-lock fs-20 c-primary-a"
+                aria-hidden="true"
+              ></i>
+              <div class="f-grow lh-2 security__box-heading">
+                <p class="security__box-title m-0 fw-600">Password</p>
+                <p class="security__box-desc m-0 fw-500 c-gray fs-14">
+                  Last Change On 25/10/2026
+                </p>
+              </div>
+              <a
+                href="#"
+                class="security__button fs-14 fw-500 bc-primary c-white p-5 rad-6"
+                >Change</a
+              >
+            </div>
+            <div
+              class="security__box d-flex align-center gap-5 mt-10 justify-center"
+            >
+              <i
+                class="security__box-icon fa-solid fa-shield fs-20 c-primary-a"
+                aria-hidden="true"
+              ></i>
+              <div class="f-grow lh-2 security__box-heading">
+                <p class="security__box-title m-0 fw-600" id="authentication">
+                  Two-Factor Authentication
+                </p>
+                <p
+                  class="security__box-desc m-0 fw-500 c-gray fs-14"
+                  id="authentication-desc"
+                >
+                  Enable/Disable The Feature
+                </p>
+              </div>
+              <label>
+                <input
+                  type="checkbox"
+                  name="security-two-fac"
+                  checked
+                  class="toggle-checkbox p-absolute"
+                  aria-labelledby="authentication"
+                  aria-describedby="authentication-desc"
+                />
+                <div
+                  class="toggle-switch c-poin m-transition p-relative"
+                  aria-hidden="true"
+                ></div>
+              </label>
+            </div>
+            <div
+              class="security__box d-flex align-center gap-5 mt-10 justify-center"
+            >
+              <i
+                class="security__box-icon fa-solid fa-tv fs-20 c-primary-a"
+                aria-hidden="true"
+              ></i>
+              <div class="f-grow lh-2 security__box-heading">
+                <p class="security__box-title m-0 fw-600">Devices</p>
+                <p class="security__box-desc m-0 fw-500 c-gray fs-14">
+                  Check The Login Devices List
+                </p>
+              </div>
+              <a
+                href="#"
+                class="security__button fs-14 fw-500 bc-grey c-white p-5 rad-6"
+                >Devices</a
+              >
+            </div>
+          </section>
+          <section class="card social p-15">
+            <h2 class="card__title m-0 fs-20">Social Info</h2>
+            <p class="card__title-desc m-0 fw-500 c-gray mt-5 mb-10">
+              Social Media Information
+            </p>
+            <div
+              class="social__box m-transition rad-10 mb-10 d-flex align-center gap-5 twitter"
+            >
+              <i
+                class="fa-brands fa-square-x-twitter social__box-icon social__box-icon--x c-gray rad-6 fs-18 m-transition"
+                aria-hidden="true"
+              ></i>
+              <label for="social__twitter" class="visually-hidden"
+                >Twitter Username</label
+              >
+              <input
+                type="text"
+                placeholder="Twitter Username"
+                class="social__box-input w-full fs-16 f-family-i"
+                id="social__twitter"
+              />
+            </div>
+            <div
+              class="social__box m-transition rad-10 mb-10 d-flex align-center gap-5 facebook"
+            >
+              <i
+                class="fa-brands fa-facebook social__box-icon social__box-icon--face c-gray rad-6 fs-18"
+                aria-hidden="true"
+              ></i>
+              <label for="social__facebook" class="visually-hidden"
+                >Facebook Username</label
+              >
+              <input
+                type="text"
+                placeholder="Facebook Username"
+                class="social__box-input w-full fs-16 f-family-i"
+                id="social__facebook"
+              />
+            </div>
+            <div
+              class="social__box m-transition rad-10 mb-10 d-flex align-center gap-5 linkedin"
+            >
+              <i
+                class="fa-brands fa-square-linkedin social__box-icon social__box-icon--linkedin c-gray rad-6 fs-18"
+                aria-hidden="true"
+              ></i>
+              <label for="social__linkedin" class="visually-hidden"
+                >Linkedin Username</label
+              >
+              <input
+                type="text"
+                placeholder="Linkedin Username"
+                class="social__box-input w-full fs-16 f-family-i"
+                id="social__linkedin"
+              />
+            </div>
+            <div
+              class="social__box m-transition rad-10 mb-10 d-flex align-center gap-5 youtube"
+            >
+              <i
+                class="fa-brands fa-youtube social__box-icon social__box-icon--youtube c-gray rad-6 fs-18"
+                aria-hidden="true"
+              ></i>
+              <label for="social__youtube" class="visually-hidden"
+                >Youtube Username</label
+              >
+              <input
+                type="text"
+                placeholder="Youtube Username"
+                class="social__box-input w-full fs-16 f-family-i"
+                id="social__youtube"
+              />
+            </div>
+          </section>
+          <section class="card widgets p-15">
+            <h2 class="card__title m-0 fs-20">Widgets Control</h2>
+            <p class="card__title-desc m-0 fw-500 c-gray mt-5 mb-10">
+              Show/Hide Widgets
+            </p>
+            <div class="widgets__box d-flex align-center gap-5 mb-10">
+              <input
+                type="checkbox"
+                checked
+                id="widgets-draft"
+                class="widgets__input bc-white m-0 m-transition rad-6 d-iflex align-center justify-center c-poin"
+              />
+              <label for="widgets-draft" class="fw-500 c-poin"
+                >Quick Draft</label
+              >
+            </div>
+            <div class="widgets__box d-flex align-center gap-5 mb-10">
+              <input
+                type="checkbox"
+                checked
+                id="widgets-targets"
+                class="widgets__input bc-white m-0 m-transition rad-6 d-iflex align-center justify-center c-poin"
+              />
+              <label for="widgets-targets" class="fw-500 c-poin"
+                >Yearly Targets</label
+              >
+            </div>
+            <div class="widgets__box d-flex align-center gap-5 mb-10">
+              <input
+                type="checkbox"
+                checked
+                id="widgets-statistics"
+                class="widgets__input bc-white m-0 m-transition rad-6 d-iflex align-center justify-center c-poin"
+              />
+              <label for="widgets-statistics" class="fw-500 c-poin"
+                >Tickets Statistics</label
+              >
+            </div>
+            <div class="widgets__box d-flex align-center gap-5 mb-10">
+              <input
+                type="checkbox"
+                checked
+                id="widgets-latest-news"
+                class="widgets__input bc-white m-0 m-transition rad-6 d-iflex align-center justify-center c-poin"
+              />
+              <label for="widgets-latest-news" class="fw-500 c-poin"
+                >Latest News</label
+              >
+            </div>
+            <div class="widgets__box d-flex align-center gap-5 mb-10">
+              <input
+                type="checkbox"
+                checked
+                id="widgets-latest-tasks"
+                class="widgets__input bc-white m-0 m-transition rad-6 d-iflex align-center justify-center c-poin"
+              />
+              <label for="widgets-latest-tasks" class="fw-500 c-poin"
+                >Latest Tasks</label
+              >
+            </div>
+            <div class="widgets__box d-flex align-center gap-5 mb-10">
+              <input
+                type="checkbox"
+                id="widgets-search-items"
+                class="widgets__input bc-white m-0 m-transition rad-6 d-iflex align-center justify-center c-poin"
+              />
+              <label for="widgets-search-items" class="fw-500 c-poin"
+                >Top Search Items</label
+              >
+            </div>
+          </section>
+          <section class="card backup p-15">
+            <h2 class="card__title m-0 fs-20">Backup Manager</h2>
+            <p class="card__title-desc m-0 fw-500 c-gray mt-5 mb-10">
+              Control Backup Time And Location
+            </p>
+            <div class="backup__times">
+              <div class="backup-time d-flex align-center gap-5 mb-10">
+                <input
+                  type="radio"
+                  class="backup__radio c-poin rad-half"
+                  id="backup__time-daily"
+                  name="backup-time"
+                />
+                <label for="backup__time-daily" class="fw-500 c-poin"
+                  >Daily</label
+                >
+              </div>
+              <div class="backup-time d-flex align-center gap-5 mb-10">
+                <input
+                  type="radio"
+                  checked
+                  class="backup__radio c-poin rad-half"
+                  name="backup-time"
+                  id="backup__time-weekly"
+                />
+                <label for="backup__time-weekly" class="fw-500 c-poin"
+                  >Weekly</label
+                >
+              </div>
+              <div class="backup-time d-flex align-center gap-5 mb-10">
+                <input
+                  type="radio"
+                  class="backup__radio c-poin rad-half"
+                  name="backup-time"
+                  id="backup__time-monthly"
+                />
+                <label for="backup__time-monthly" class="fw-500 c-poin"
+                  >Monthly</label
+                >
+              </div>
+            </div>
+            <div class="backup__locations d-flex gap-10 align-center f-wrap">
+              <div class="backup__location f-grow rad-10 p-relative">
+                <label
+                  class="c-poin d-flex align-center justify-center f-column fs-18 fw-500 p-10"
+                >
+                  <img
+                    src="imgs/server-1.webp"
+                    alt=""
+                    class="backup__location-img"
+                  />
+                  Megaman
+                  <input
+                    type="radio"
+                    name="backup__server"
+                    class="backup__input p-absolute"
+                    id="server__megaman"
+                  />
+                </label>
+              </div>
+              <div class="backup__location f-grow rad-10 p-relative">
+                <label
+                  class="c-poin d-flex align-center justify-center f-column fs-18 fw-500 p-10"
+                >
+                  <img
+                    src="imgs/server-2.webp"
+                    alt=""
+                    class="backup__location-img"
+                  />
+                  Zero
+                  <input
+                    type="radio"
+                    name="backup__server"
+                    class="backup__input p-absolute"
+                    id="server__zero"
+                    checked
+                  />
+                </label>
+              </div>
+              <div class="backup__location f-grow rad-10 p-relative">
+                <label
+                  class="c-poin d-flex align-center justify-center f-column fs-18 fw-500 p-10"
+                >
+                  <img
+                    src="imgs/server-3.webp"
+                    alt=""
+                    class="backup__location-img"
+                  />
+                  Sigma
+                  <input
+                    type="radio"
+                    name="backup__server"
+                    class="backup__input p-absolute"
+                    id="server__sigma"
+                  />
+                </label>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

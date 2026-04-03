@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plans</title>
+    <link rel="icon" href="imgs/logo-2.webp" type="image/webp" />
+    <meta
+      name="description"
+      content="Compare subscription plans on the Basosy Dashboard. View features and pricing for Free, Basic, and Premium plans, and upgrade your account for exclusive benefits."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="css/all.min.css" /></noscript>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.min.css" />
+  </head>
+  <body>
+    <aside class="sidebar bc-white p-10 p-relative">
+      <div class="sidebar__logo d-flex align-center gap-5 mb-10">
+        <img src="imgs/logo-2.webp" alt="" class="sidebar__logo-image rad-10" />
+        <h2 class="sidebar__heading m-0">Basosy</h2>
+      </div>
+      <ul class="sidebar__links">
+        <li>
+          <a
+            href="index.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i
+              class="fa-solid fa-tachograph-digital fa-fw"
+              aria-hidden="true"
+            ></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="settings.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="profile.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="projects.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="courses.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw" aria-hidden="true"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="friends.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-user-group fa-fw" aria-hidden="true"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="files.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="plans.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500 active"
+          >
+            <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <header
+        class="header bc-white p-10 d-flex justify-between align-center gap-5"
+      >
+        <search class="p-relative header__search">
+          <form action="">
+            <i
+              class="fa-solid fa-magnifying-glass p-absolute header__search-icon"
+            ></i>
+            <label for="search" class="visually-hidden">Search Bar</label>
+            <input
+              type="search"
+              placeholder="Type A Keyword"
+              id="search"
+              class="p-10 rad-6 header__search-input fw-500 m-transition w-100 f-family-i"
+            />
+          </form>
+        </search>
+        <div class="header__profile d-flex align-center gap-10">
+          <i
+            class="fa-regular fa-bell fa-lg p-relative header__icon"
+            aria-hidden="true"
+          ></i>
+          <img
+            src="imgs/myimage.webp"
+            class="rad-half p-relative header__image"
+            alt="your image"
+          />
+        </div>
+      </header>
+      <div class="page-content p-20">
+        <h1 class="page-content__title m-0 p-relative">Plans</h1>
+        <div class="page-content__wrapper">
+          <section class="card plan-card p-relative rad-10 p-10 m-transition">
+            <div
+              class="plan-card__heading plan-card__heading--free tc c-white p-10 mb-10"
+            >
+              <h2 class="plan-card__title m-0 mb-5 fw-600">Free</h2>
+              <p class="m-0 plan-card__title-desc fw-500">$0.00</p>
+            </div>
+            <ul class="plan-card__list">
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Access All Text Lessons
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Access All Videos Lessons
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Appear On Leaderboard
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-xmark false-icon fs-20 rad-half c-danger"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Does not include:</span>
+                Browse Content Without Ads
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-xmark false-icon fs-20 rad-half c-danger"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Does not include:</span>
+                Access All Assignments
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-xmark false-icon fs-20 rad-half c-danger"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Does not include:</span>
+                Get Daily Prizes
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-xmark false-icon fs-20 rad-half c-danger"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Does not include:</span>
+                Earn Certificate
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-xmark false-icon fs-20 rad-half c-danger"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Does not include:</span>
+                1 GB Space For Hosting Files
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-xmark false-icon fs-20 rad-half c-danger"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Does not include:</span>
+                Access Badge System
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="plan-card__button bc-success c-white fs-20 rad-10 p-10 d-block tc mt-10 mb-10"
+              >Join</a
+            >
+          </section>
+          <section class="card plan-card plan-card--current p-relative rad-10">
+            <div class="p-10 h-full">
+              <div
+                class="plan-card__heading plan-card__heading--premium tc c-white p-10 mb-10"
+              >
+                <h2 class="plan-card__title m-0 mb-5 fw-600">Premium</h2>
+                <p class="m-0 plan-card__title-desc fw-500">$19.99</p>
+              </div>
+              <ul class="plan-card__list">
+                <li
+                  class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+                >
+                  <i
+                    class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Includes:</span>
+                  Access All Text Lessons
+                  <i
+                    class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                  ></i>
+                </li>
+                <li
+                  class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+                >
+                  <i
+                    class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Includes:</span>
+                  Access All Videos Lessons
+                  <i
+                    class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                  ></i>
+                </li>
+                <li
+                  class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+                >
+                  <i
+                    class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Includes:</span>
+                  Appear On Leaderboard
+                  <i
+                    class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                  ></i>
+                </li>
+                <li
+                  class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+                >
+                  <i
+                    class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Includes:</span>
+                  Browse Content Without Ads
+                  <i
+                    class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                  ></i>
+                </li>
+                <li
+                  class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+                >
+                  <i
+                    class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Includes:</span>
+                  Access All Assignments
+                  <i
+                    class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                  ></i>
+                </li>
+                <li
+                  class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+                >
+                  <i
+                    class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Includes:</span>
+                  Get Daily Prizes
+                  <i
+                    class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                  ></i>
+                </li>
+                <li
+                  class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+                >
+                  <i
+                    class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Includes:</span>
+                  Earn Certificate
+                  <i
+                    class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                  ></i>
+                </li>
+                <li
+                  class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+                >
+                  <i
+                    class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Includes:</span>
+                  1 GB Space For Hosting Files
+                  <i
+                    class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                  ></i>
+                </li>
+                <li
+                  class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+                >
+                  <i
+                    class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="visually-hidden">Includes:</span>
+                  Access Badge System
+                  <i
+                    class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                  ></i>
+                </li>
+              </ul>
+              <div
+                class="plan-card__current c-warning rad-10 p-10 tc fw-500 mt-10 mb-10"
+              >
+                This Is Your Current Plan
+              </div>
+            </div>
+          </section>
+          <section class="card plan-card p-relative rad-10 p-10 m-transition">
+            <div
+              class="plan-card__heading plan-card__heading--basic tc c-white p-10 mb-10"
+            >
+              <h2 class="plan-card__title m-0 mb-5 fw-600">Basic</h2>
+              <p class="m-0 plan-card__title-desc fw-500">$7.99</p>
+            </div>
+            <ul class="plan-card__list">
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Access All Text Lessons
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Access All Videos Lessons
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Appear On Leaderboard
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Browse Content Without Ads
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Access All Assignments
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Get Daily Prizes
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-check c-success rad-half check-icon fs-20"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Includes:</span>
+                Earn Certificate
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-xmark false-icon fs-20 rad-half c-danger"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Does not include:</span>
+                1 GB Space For Hosting Files
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+              <li
+                class="plan-card__li d-flex gap-5 fw-500 align-center pt-10 pb-10"
+              >
+                <i
+                  class="fa-solid fa-circle-xmark false-icon fs-20 rad-half c-danger"
+                  aria-hidden="true"
+                ></i>
+                <span class="visually-hidden">Does not include:</span>
+                Access Badge System
+                <i
+                  class="fa-solid fa-circle-info help-icon ml-a c-gray fs-18"
+                ></i>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="plan-card__button bc-primary c-white fs-20 rad-10 p-10 d-block tc mt-10 mb-10"
+              >Join</a
+            >
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

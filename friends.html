@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends</title>
+    <link rel="icon" href="imgs/logo-2.webp" type="image/webp" />
+    <meta
+      name="description"
+      content="Basosy Dashboard Friends page. Browse your professional network, view detailed statistics for each connection, and manage your contact list with ease."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="css/all.min.css" /></noscript>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.min.css" />
+  </head>
+  <body>
+    <aside class="sidebar bc-white p-10 p-relative">
+      <div class="sidebar__logo d-flex align-center gap-5 mb-10">
+        <img src="imgs/logo-2.webp" alt="" class="sidebar__logo-image rad-10" />
+        <h2 class="sidebar__heading m-0">Basosy</h2>
+      </div>
+      <ul class="sidebar__links">
+        <li>
+          <a
+            href="index.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i
+              class="fa-solid fa-tachograph-digital fa-fw"
+              aria-hidden="true"
+            ></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="settings.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="profile.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="projects.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="courses.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw" aria-hidden="true"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="friends.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500 active"
+          >
+            <i class="fa-solid fa-user-group fa-fw" aria-hidden="true"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="files.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="plans.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <header
+        class="header bc-white p-10 d-flex justify-between align-center gap-5"
+      >
+        <search class="p-relative header__search">
+          <form action="">
+            <i
+              class="fa-solid fa-magnifying-glass p-absolute header__search-icon"
+            ></i>
+            <label for="search" class="visually-hidden">Search Bar</label>
+            <input
+              type="search"
+              placeholder="Type A Keyword"
+              id="search"
+              class="p-10 rad-6 header__search-input fw-500 m-transition w-100 f-family-i"
+            />
+          </form>
+        </search>
+        <div class="header__profile d-flex align-center gap-10">
+          <i
+            class="fa-regular fa-bell fa-lg p-relative header__icon"
+            aria-hidden="true"
+          ></i>
+          <img
+            src="imgs/myimage.webp"
+            class="rad-half p-relative header__image"
+            alt="your image"
+          />
+        </div>
+      </header>
+      <div class="page-content p-20">
+        <h1 class="page-content__title m-0 p-relative">Friends</h1>
+        <div class="page-content__wrapper page-content__wrapper--friends">
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="contact Abdo Basosy"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="send email to Abdo Basosy"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-01.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Abdo Basosy</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">
+                Full Stack Developer
+              </p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >99 Friend
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >15 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >25 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 02/10/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="contact Omar Fathy"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="send email to Omar Fathy"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-02.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Omar Fathy</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">Cloud Developer</p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >30 Friends
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >11 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >12 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 02/08/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition"
+                tabindex="0"
+                aria-label="contact Omar Ahmed"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition"
+                tabindex="0"
+                aria-label="send email to Omar Ahmed"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-03.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Omar Ahmed</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">Mobile Developer</p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >80 Friends
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >20 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >18 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 02/06/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="contact Shady Nabil"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="send email to Shady Nabil"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-04.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Shady Nabil</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">
+                Back-End Developer
+              </p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >70 Friends
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >30 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >18 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 28/06/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="contact Mohamed Ibrahim"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="send email to Mohamed Ibrahim"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-05.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Mohamed Ibrahim</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">
+                Algorithm Developer
+              </p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >80 Friends
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >30 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >18 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 28/08/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="contact Amr Hendawy"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="send email to Amr Hendawy"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-01.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Amr Hendawy</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">
+                Back-End Developer
+              </p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >70 Friends
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >30 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >18 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 28/06/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="contact Mahmoud Adel"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="send email to Mahmoud Adel"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-02.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Mahmoud Adel</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">Cloud Developer</p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >30 Friends
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >11 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >12 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 02/08/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="contact Ahmed Abuzaid"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="send email to Ahmed Abuzaid"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-03.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Ahmed Abuzaid</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">Content Creator</p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >80 Friends
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >30 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >18 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 28/08/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="contact Enta Malak"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="send email to Enta Malak"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-04.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Enta Malak</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">
+                JavaScript Developer
+              </p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >90 Friends
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >15 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >25 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 02/10/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+          <section class="card friend-card p-15 m-transition p-relative">
+            <div
+              class="friend-card__contact d-flex gap-5 p-absolute align-center"
+            >
+              <i
+                class="fa-solid fa-phone friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="contact Hamza"
+              ></i>
+              <i
+                class="fa-regular fa-envelope friend-card__contact-icon rad-half p-10 c-gray fs-14 bc-eee m-transition c-poin"
+                tabindex="0"
+                aria-label="send email to Hamza"
+              ></i>
+            </div>
+            <div class="friend-card__identity tc pb-20">
+              <img
+                src="imgs/friend-05.webp"
+                alt=""
+                class="friend-card__img rad-half w-100 mt-10 mb-10"
+              />
+              <h2 class="friend-card__name fs-18 m-0 mb-5">Hamza</h2>
+              <p class="m-0 friend-card__job c-gray fw-500">
+                Front-End Developer
+              </p>
+            </div>
+            <div class="friend-card__stats pb-20 mt-15">
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-regular fa-face-smile fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >80 Friends
+              </div>
+              <div class="friend-card__stat mb-10 fw-500">
+                <i
+                  class="fa-solid fa-diagram-project fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >20 Projects
+              </div>
+              <div class="friend-card__stat fw-500">
+                <i
+                  class="fa-regular fa-newspaper fa-fw friend-card__stats-icon"
+                  aria-hidden="true"
+                ></i
+                >18 Articles
+              </div>
+            </div>
+            <div
+              class="friend-card__footer d-flex justify-between align-center mt-10 mb-5 gap-5 f-wrap"
+            >
+              <span class="friend-card__date fs-14 c-gray fw-500"
+                >Joined 02/06/2025</span
+              >
+              <div class="friend-card__actions d-flex gap-5">
+                <a
+                  href="#"
+                  class="friend-card__but bc-primary c-white button-s fs-14 rad-6"
+                  >Profile</a
+                >
+                <a
+                  href="#"
+                  class="friend-card__but button-s fs-14 rad-6 button c-white bc-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

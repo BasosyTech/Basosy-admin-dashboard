@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="icon" href="imgs/logo-2.webp" type="image/webp" />
+    <meta
+      name="description"
+      content="Your personal Dashboard profile. Showcase your development skills, monitor recent activities, and keep your account information up to date."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="css/all.min.css" /></noscript>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.min.css" />
+  </head>
+  <body>
+    <aside class="sidebar bc-white p-10 p-relative">
+      <div class="sidebar__logo d-flex align-center gap-5 mb-10">
+        <img src="imgs/logo-2.webp" alt="" class="sidebar__logo-image rad-10" />
+        <h2 class="sidebar__heading m-0">Basosy</h2>
+      </div>
+      <ul class="sidebar__links">
+        <li>
+          <a
+            href="index.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i
+              class="fa-solid fa-tachograph-digital fa-fw"
+              aria-hidden="true"
+            ></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="settings.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="profile.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500 active"
+          >
+            <i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="projects.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="courses.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw" aria-hidden="true"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="friends.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-user-group fa-fw" aria-hidden="true"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="files.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="plans.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <header
+        class="header bc-white p-10 d-flex justify-between align-center gap-5"
+      >
+        <search class="p-relative header__search">
+          <form action="">
+            <i
+              class="fa-solid fa-magnifying-glass p-absolute header__search-icon"
+            ></i>
+            <label for="search" class="visually-hidden">Search Bar</label>
+            <input
+              type="search"
+              placeholder="Type A Keyword"
+              id="search"
+              class="p-10 rad-6 header__search-input fw-500 m-transition w-100 f-family-i"
+            />
+          </form>
+        </search>
+        <div class="header__profile d-flex align-center gap-10">
+          <i
+            class="fa-regular fa-bell fa-lg p-relative header__icon"
+            aria-hidden="true"
+          ></i>
+          <img
+            src="imgs/myimage.webp"
+            class="rad-half p-relative header__image"
+            alt="your image"
+          />
+        </div>
+      </header>
+      <div class="page-content profile-page p-20">
+        <h1 class="page-content__title p-relative m-0">Profile</h1>
+        <section class="card profile-card p-15 mb-20">
+          <div class="profile__main d-flex gap-10 align-center f-wrap">
+            <img
+              src="imgs/myimage.webp"
+              alt=""
+              class="profile__img w-100 rad-half"
+            />
+            <div class="profile__main-info">
+              <h2 class="profile__main-name m-0">Abdo Basosy</h2>
+              <p class="profile__main-level m-0 c-gray fw-500">Level 20</p>
+              <progress
+                class="profile__main-progg w-full d-block rad-6"
+                value="80"
+                max="100"
+              ></progress>
+              <div class="profile__main-rating d-flex gap-10 justify-between">
+                <div class="profile__rating-icons" aria-hidden="true">
+                  <i
+                    class="fa-solid fa-star profile__rating-icon c-primary-a"
+                  ></i>
+                  <i
+                    class="fa-solid fa-star profile__rating-icon c-primary-a"
+                  ></i>
+                  <i
+                    class="fa-solid fa-star profile__rating-icon c-primary-a"
+                  ></i>
+                  <i
+                    class="fa-solid fa-star profile__rating-icon c-primary-a"
+                  ></i>
+                  <i
+                    class="fa-solid fa-star-half-stroke profile__rating-icon c-primary-a"
+                  ></i>
+                </div>
+                <p class="visually-hidden m-0">4.5 Starts</p>
+                <div class="profile__rating-number c-gray fw-500">
+                  550 Rating
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile__info mb-10 mt-10">
+            <div class="profile__info-box">
+              <h2 class="profile__box-title fs-20 m-0 mt-10" id="general-info">
+                General Information
+              </h2>
+              <div class="profile__info-label fw-600 c-gray">Full Name:</div>
+              <div class="profile__info-name fw-500 mb-10">Abdo Basosy</div>
+              <div class="profile__info-label fw-600 c-gray">Gender:</div>
+              <div class="profile__info-name fw-500 mb-10">Male</div>
+              <div class="profile__info-label fw-600 c-gray">Country:</div>
+              <div class="profile__info-name fw-500">Egypt</div>
+              <label class="mt-10 d-block">
+                <input
+                  type="checkbox"
+                  checked
+                  class="toggle-checkbox p-absolute"
+                  role="switch"
+                  aria-labelledby="general-info"
+                />
+                <div
+                  class="toggle-switch c-poin m-transition p-relative"
+                  aria-hidden="true"
+                ></div>
+              </label>
+            </div>
+            <div class="profile__info-box">
+              <h2 class="profile__box-title fs-20 m-0 mt-10" id="personal-info">
+                Personal Information
+              </h2>
+              <div class="profile__info-label fw-600 c-gray">Email:</div>
+              <div class="profile__info-name fw-500 mb-10">o@nn.sa</div>
+              <div class="profile__info-label fw-600 c-gray">Phone:</div>
+              <div class="profile__info-name fw-500 mb-10">019123456789</div>
+              <div class="profile__info-label fw-600 c-gray">
+                Date Of Birth:
+              </div>
+              <div class="profile__info-name fw-500">25/10/1982</div>
+              <label class="mt-10 d-block">
+                <input
+                  type="checkbox"
+                  class="toggle-checkbox p-absolute"
+                  role="switch"
+                  aria-labelledby="personal-info"
+                />
+                <div
+                  class="toggle-switch c-poin m-transition p-relative"
+                  aria-hidden="true"
+                ></div>
+              </label>
+            </div>
+            <div class="profile__info-box">
+              <h2 class="profile__box-title fs-20 m-0 mt-10" id="job-info">
+                Job Information
+              </h2>
+              <div class="profile__info-label fw-600 c-gray">Title:</div>
+              <div class="profile__info-name fw-500 mb-10">
+                Full Stack Developer
+              </div>
+              <div class="profile__info-label fw-600 c-gray">
+                Programming Language:
+              </div>
+              <div class="profile__info-name fw-500 mb-10">Python</div>
+              <div class="profile__info-label fw-600 c-gray">
+                Years Of Experience:
+              </div>
+              <div class="profile__info-name fw-500">15+</div>
+              <label class="mt-10 d-block">
+                <input
+                  type="checkbox"
+                  checked
+                  class="toggle-checkbox p-absolute"
+                  aria-labelledby="job-info"
+                  role="switch"
+                />
+                <div
+                  class="toggle-switch c-poin m-transition p-relative"
+                  aria-hidden="true"
+                ></div>
+              </label>
+            </div>
+            <div class="profile__info-box">
+              <h2 class="profile__box-title fs-20 m-0 mt-10" id="billing-info">
+                Billing Information
+              </h2>
+              <div class="profile__info-label fw-600 c-gray">
+                Payment Method:
+              </div>
+              <div class="profile__info-name fw-500 mb-10">Paypal</div>
+              <div class="profile__info-label fw-600 c-gray">Email:</div>
+              <div class="profile__info-name fw-500 mb-10">
+                email@website.com
+              </div>
+              <div class="profile__info-label fw-600 c-gray">Subscription:</div>
+              <div class="profile__info-name fw-500">Monthly</div>
+              <label class="d-block mt-10">
+                <input
+                  type="checkbox"
+                  class="toggle-checkbox p-absolute"
+                  aria-labelledby="billing-info"
+                  role="switch"
+                />
+                <div
+                  class="toggle-switch c-poin m-transition p-relative"
+                  aria-hidden="true"
+                ></div>
+              </label>
+            </div>
+          </div>
+        </section>
+        <div class="profile__wrapper d-flex mb-20 gap-15">
+          <section class="card skills f-grow p-15">
+            <h2 class="card__title fs-20 m-0">My Skills</h2>
+            <p class="card__title-desc c-gray m-0 fw-500 fs-18 mb-10">
+              Complete Skills List
+            </p>
+            <div class="skills__wrapper mw-full d-flex gap-5 f-wrap">
+              <span class="skills__tag c-white rad-6">HTML</span>
+              <span class="skills__tag c-white rad-6">Pugjs</span>
+              <span class="skills__tag c-white rad-6">HAML</span>
+              <span class="skills__tag c-white rad-6">CSS</span>
+              <span class="skills__tag c-white rad-6">SASS</span>
+              <span class="skills__tag c-white rad-6">Stylus</span>
+              <span class="skills__tag c-white rad-6">javaScript</span>
+              <span class="skills__tag c-white rad-6">TypeScript</span>
+              <span class="skills__tag c-white rad-6">Vuejs</span>
+              <span class="skills__tag c-white rad-6">Reactjs</span>
+              <span class="skills__tag c-white rad-6">Jest</span>
+              <span class="skills__tag c-white rad-6">Jasmine</span>
+              <span class="skills__tag c-white rad-6">PHP</span>
+              <span class="skills__tag c-white rad-6">Laravel</span>
+              <span class="skills__tag c-white rad-6">Python</span>
+              <span class="skills__tag c-white rad-6">Django</span>
+            </div>
+          </section>
+          <section class="card activities f-grow p-15">
+            <h2 class="card__title fs-20 m-0">Latest Activities</h2>
+            <p class="card__title-desc m-0 c-gray fw-500 mb-10">
+              Latest Activities Done By The User
+            </p>
+            <div class="activities__boxes p-relative">
+              <div class="activities__box d-flex gap-10 align-center mb-20">
+                <div class="activities__image-box p-relative">
+                  <img
+                    src="imgs/store.webp"
+                    alt=""
+                    class="activities__img mw-full"
+                  />
+                </div>
+                <div class="activities__info lh-1">
+                  <h3 class="activities__heading m-0 fs-18">Store</h3>
+                  <p class="activities__heading-desc m-0 fw-500">
+                    Bought The Mastering Python Course
+                  </p>
+                  <span class="activities__time c-gray"
+                    >12:00 Am &#8226; May 3 2026</span
+                  >
+                </div>
+              </div>
+              <div class="activities__box d-flex gap-10 align-center mb-20">
+                <div class="activities__image-box p-relative">
+                  <img
+                    src="imgs/academy.webp"
+                    alt=""
+                    class="activities__img mw-full"
+                  />
+                </div>
+                <div class="activities__info lh-1">
+                  <h3 class="activities__heading m-0 fs-18">Academy</h3>
+                  <p class="activities__heading-desc m-0 fw-500">
+                    Got The PHP Certificate
+                  </p>
+                  <span class="activities__time c-gray"
+                    >9:00 Pm &#8226; June 3 2026</span
+                  >
+                </div>
+              </div>
+              <div class="activities__box d-flex gap-10 align-center mb-20">
+                <div class="activities__image-box p-relative">
+                  <img
+                    src="imgs/Badget.webp"
+                    alt=""
+                    class="activities__img mw-full"
+                  />
+                </div>
+                <div class="activities__info lh-1">
+                  <h3 class="activities__heading m-0 fs-18">Badges</h3>
+                  <p class="activities__heading-desc m-0 fw-500">
+                    Unlocked The 10 Skills Badge
+                  </p>
+                  <span class="activities__time c-gray"
+                    >5:30 Am &#8226; April 3 2026</span
+                  >
+                </div>
+              </div>
+              <div class="activities__box d-flex gap-10 align-center">
+                <div class="activities__image-box p-relative">
+                  <img
+                    src="imgs/store.webp"
+                    alt=""
+                    class="activities__img mw-full"
+                  />
+                </div>
+                <div class="activities__info lh-1">
+                  <h3 class="activities__heading m-0 fs-18">Store</h3>
+                  <p class="activities__heading-desc m-0 fw-500">
+                    Bought The Typescript Course
+                  </p>
+                  <span class="activities__time c-gray"
+                    >12:50 Pm &#8226; Octoper 3 2026</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

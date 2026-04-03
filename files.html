@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Files</title>
+    <link rel="icon" href="imgs/logo-2.webp" type="image/webp" />
+    <meta
+      name="description"
+      content="Manage and organize your files on the Basosy Dashboard. Browse uploads, monitor storage statistics by file type, and securely upload new documents."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="css/all.min.css" /></noscript>
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.min.css" />
+  </head>
+  <body>
+    <aside class="sidebar bc-white p-10 p-relative">
+      <div class="sidebar__logo d-flex align-center gap-5 mb-10">
+        <img src="imgs/logo-2.webp" alt="" class="sidebar__logo-image rad-10" />
+        <h2 class="sidebar__heading m-0">Basosy</h2>
+      </div>
+      <ul class="sidebar__links">
+        <li>
+          <a
+            href="index.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i
+              class="fa-solid fa-tachograph-digital fa-fw"
+              aria-hidden="true"
+            ></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="settings.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-gear fa-fw" aria-hidden="true"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="profile.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="projects.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="courses.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-graduation-cap fa-fw" aria-hidden="true"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="friends.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-solid fa-user-group fa-fw" aria-hidden="true"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="files.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500 active"
+          >
+            <i class="fa-regular fa-file fa-fw" aria-hidden="true"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="plans.html"
+            class="p-10 rad-6 mb-5 d-flex gap-5 align-center sidebar__link fw-500"
+          >
+            <i class="fa-regular fa-credit-card fa-fw" aria-hidden="true"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <header
+        class="header bc-white p-10 d-flex justify-between align-center gap-5"
+      >
+        <search class="p-relative header__search">
+          <form action="">
+            <i
+              class="fa-solid fa-magnifying-glass p-absolute header__search-icon"
+            ></i>
+            <label for="search" class="visually-hidden">Search Bar</label>
+            <input
+              type="search"
+              placeholder="Type A Keyword"
+              id="search"
+              class="p-10 rad-6 header__search-input fw-500 m-transition w-100 f-family-i"
+            />
+          </form>
+        </search>
+        <div class="header__profile d-flex align-center gap-10">
+          <i
+            class="fa-regular fa-bell fa-lg p-relative header__icon"
+            aria-hidden="true"
+          ></i>
+          <img
+            src="imgs/myimage.webp"
+            class="rad-half p-relative header__image"
+            alt="your image"
+          />
+        </div>
+      </header>
+      <div class="page-content page-content--files p-20">
+        <h1 class="page-content__title m-0 p-relative">Files</h1>
+        <div class="files-page d-flex justify-between gap-10">
+          <section class="card files-stats p-15">
+            <h2 class="files-stats__title fs-18 m-0 mb-10">Files Statistics</h2>
+            <div
+              class="file-group file-group--pdf p-10 rad-6 d-flex gap-10 align-center f-wrap mb-10"
+            >
+              <i
+                class="fa-regular fa-file-pdf file-group__icon rad-6 d-iflex align-center p-5 justify-center"
+                aria-hidden="true"
+              ></i>
+              <div class="fs-14">
+                <h3 class="file-group__title m-0 fs-14 fw-600">PDF Files</h3>
+                <span class="file-group__count c-gray fw-500">130</span>
+              </div>
+              <span
+                class="file-group__size fs-14 fw-500 c-gray ml-a align-s-end"
+                >6.5GB</span
+              >
+            </div>
+            <div
+              class="file-group file-group--img p-10 rad-6 d-flex gap-10 align-center f-wrap mb-10"
+            >
+              <i
+                class="fa-regular fa-file-image file-group__icon rad-6 d-iflex align-center p-5 justify-center"
+                aria-hidden="true"
+              ></i>
+              <div class="fs-14">
+                <h3 class="file-group__title m-0 fs-14 fw-600">Images</h3>
+                <span class="file-group__count c-gray fw-500">115 Files</span>
+              </div>
+              <span
+                class="file-group__size fs-14 fw-500 c-gray ml-a align-s-end"
+                >3.5GB</span
+              >
+            </div>
+            <div
+              class="file-group file-group--word p-10 rad-6 d-flex gap-10 align-center f-wrap mb-10"
+            >
+              <i
+                class="fa-regular fa-file-word file-group__icon rad-6 d-iflex align-center p-5 justify-center"
+                aria-hidden="true"
+              ></i>
+              <div class="fs-14">
+                <h3 class="file-group__title m-0 fs-14 fw-600">Word Files</h3>
+                <span class="file-group__count c-gray fw-500">110 Files</span>
+              </div>
+              <span
+                class="file-group__size fs-14 fw-500 c-gray ml-a align-s-end"
+                >3.2GB</span
+              >
+            </div>
+            <div
+              class="file-group file-group--csv p-10 rad-6 d-flex gap-10 align-center f-wrap mb-10"
+            >
+              <i
+                class="fa-solid fa-file-csv file-group__icon rad-6 d-iflex align-center p-5 justify-center"
+                aria-hidden="true"
+              ></i>
+              <div class="fs-14">
+                <h3 class="file-group__title m-0 fs-14 fw-600">CSV Files</h3>
+                <span class="file-group__count c-gray fw-500">99 Files</span>
+              </div>
+              <span
+                class="file-group__size fs-14 fw-500 c-gray ml-a align-s-end"
+                >2.9GB</span
+              >
+            </div>
+            <a
+              href="#"
+              class="files-stats__upload d-block button-s bc-primary c-white tc rad-6 fs-14 m-a"
+            >
+              <i class="fa-solid fa-angles-up mr-10" aria-hidden="true"></i>
+              Uploads
+            </a>
+          </section>
+          <div class="page-content__wrapper page-content__wrapper--files">
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.pdf"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/pdf.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.pdf</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Basosy
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">20/06/2025</span>
+                <span class="file-card__size">5.5MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.avi"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/avi.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.avi</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Admin
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">12.5MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.eps"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/eps.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.eps</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Uploader
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">2.7MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.psd"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/psd.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.psd</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Osama
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">15.1MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.dll"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/dll.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.dll</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Coder
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">2.2MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.png"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/png.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.png</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Designer
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">1.1MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.dll"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/dll.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.dll</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Coder
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">2.2MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.png"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/png.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.png</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Designer
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">1.1MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.psd"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/psd.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.psd</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Osama
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">15.1MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.pdf"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/pdf.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.pdf</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Elzero
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">5.5MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.avi"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/avi.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.avi</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Admin
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">12.5MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.eps"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/eps.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.eps</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Uploader
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">2.7MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.pdf"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/pdf.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.pdf</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Elzero
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">5.5MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.avi"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/avi.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.avi</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Admin
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">12.5MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.eps"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/eps.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.eps</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Uploader
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">2.7MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.psd"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/psd.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.psd</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Osama
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">15.1MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.dll"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/dll.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.dll</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Coder
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">2.2MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.png"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/png.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.png</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Designer
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">1.1MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.dll"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/dll.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.dll</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Coder
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">2.2MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.png"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/png.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.png</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Designer
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">1.1MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.psd"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/psd.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.psd</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Osama
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">15.1MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.pdf"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/pdf.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.pdf</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Elzero
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">5.5MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.avi"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/avi.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.avi</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Admin
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">12.5MB</span>
+              </div>
+            </section>
+            <section class="card file-card p-10 m-transition">
+              <button
+                class="but-reset download-icon c-gray p-absolute fs-16 c-poin"
+                aria-label="Download my-file.eps"
+              >
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+              </button>
+              <div class="tc">
+                <img
+                  src="imgs/eps.svg"
+                  alt=""
+                  class="file-card__icon mt-15 mb-10 m-transition"
+                />
+              </div>
+              <h2 class="file-card__title fs-14 m-0 tc fw-500">my-file.eps</h2>
+              <p
+                class="file-card__publisher mt-10 mb-10 fs-14 c-gray ts fw-500"
+              >
+                Uploader
+              </p>
+              <div
+                class="file-card__info d-flex justify-between align-center fs-14 c-gray pt-10"
+              >
+                <span class="file-card__date">16/05/2025</span>
+                <span class="file-card__size">2.7MB</span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
